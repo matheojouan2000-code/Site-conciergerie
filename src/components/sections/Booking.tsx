@@ -3,7 +3,7 @@ import { Button } from "../ui/Button";
 
 const PHONE_NUMBER = "+33612345678";
 const PHONE_DISPLAY = "06 12 34 56 78";
-const EMAIL = "contact@nomade-conciergerie.fr";
+const EMAIL = "contact@mjt-immobilier.fr";
 
 export function Booking() {
   return (

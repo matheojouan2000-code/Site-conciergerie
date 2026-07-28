@@ -30,7 +30,7 @@ export function Header() {
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gold-gradient text-navy-950">
             <Sparkles size={18} strokeWidth={2.5} />
           </span>
-          <span className="font-display text-lg font-bold tracking-tight">Nomade Conciergerie</span>
+          <span className="font-display text-lg font-bold tracking-tight">MJT Immobilier</span>
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">

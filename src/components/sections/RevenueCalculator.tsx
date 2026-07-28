@@ -165,7 +165,7 @@ export function RevenueCalculator() {
                   <p className="text-xs text-white/40">/mois</p>
                 </div>
                 <div className="rounded-2xl border border-gold-500/40 bg-gold-500/10 p-4">
-                  <p className="text-xs text-gold-300">Avec Nomade Conciergerie</p>
+                  <p className="text-xs text-gold-300">Avec MJT Immobilier</p>
                   <p className="mt-1 font-display text-xl font-bold text-gold-400 sm:text-2xl">
                     {formatCurrency(estimate.monthlyWithConcierge)}
                   </p>

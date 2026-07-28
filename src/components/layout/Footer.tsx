@@ -12,7 +12,7 @@ export function Footer() {
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gold-gradient text-navy-950">
                 <Sparkles size={16} strokeWidth={2.5} />
               </span>
-              <span className="font-display text-base font-bold">Nomade Conciergerie</span>
+              <span className="font-display text-base font-bold">MJT Immobilier</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed">
               Gestion locative premium pour propriétaires exigeants. Vos revenus, notre priorité.
@@ -49,14 +49,14 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} className="text-gold-500" />
-                contact@nomade-conciergerie.fr
+                contact@mjt-immobilier.fr
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs sm:flex-row">
-          <p>© {new Date().getFullYear()} Nomade Conciergerie. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} MJT Immobilier. Tous droits réservés.</p>
           <div className="flex gap-5">
             <a href="#" className="hover:text-gold-400">Mentions légales</a>
             <a href="#" className="hover:text-gold-400">CGV</a>

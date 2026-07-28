@@ -16,7 +16,7 @@ export async function downloadRevenueReport(params: {
   doc.rect(0, 0, 210, 40, "F");
   doc.setTextColor(232, 191, 95);
   doc.setFontSize(20);
-  doc.text("Nomade Conciergerie", 15, 22);
+  doc.text("MJT Immobilier", 15, 22);
   doc.setFontSize(11);
   doc.setTextColor(255, 255, 255);
   doc.text("Rapport d'estimation de revenus locatifs", 15, 31);
@@ -37,8 +37,8 @@ export async function downloadRevenueReport(params: {
     ["Taux d'occupation sans conciergerie", `${Math.round(estimate.occupancyWithoutConcierge * 100)}%`],
     ["Taux d'occupation avec conciergerie", `${Math.round(estimate.occupancyWithConcierge * 100)}%`],
     ["Revenu mensuel sans conciergerie", formatCurrency(estimate.monthlyWithoutConcierge)],
-    ["Revenu mensuel avec Nomade Conciergerie", formatCurrency(estimate.monthlyWithConcierge)],
-    ["Revenu annuel estimé avec Nomade Conciergerie", formatCurrency(estimate.yearlyWithConcierge)],
+    ["Revenu mensuel avec MJT Immobilier", formatCurrency(estimate.monthlyWithConcierge)],
+    ["Revenu annuel estimé avec MJT Immobilier", formatCurrency(estimate.yearlyWithConcierge)],
     ["Gain estimé", `+${estimate.uplift}%`],
   ];
 
@@ -65,5 +65,5 @@ export async function downloadRevenueReport(params: {
     { maxWidth: 180 }
   );
 
-  doc.save("estimation-revenus-nomade-conciergerie.pdf");
+  doc.save("estimation-revenus-mjt-immobilier.pdf");
 }

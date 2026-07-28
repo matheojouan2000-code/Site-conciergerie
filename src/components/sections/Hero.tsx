@@ -89,7 +89,7 @@ export function Hero() {
                 <span className="font-display text-base font-semibold text-white/80">~1 100 €/mois</span>
               </div>
               <div className="flex items-center justify-between rounded-xl border border-gold-500/30 bg-gold-500/10 px-4 py-3">
-                <span className="text-sm text-gold-300">Avec Nomade Conciergerie</span>
+                <span className="text-sm text-gold-300">Avec MJT Immobilier</span>
                 <span className="font-display text-lg font-bold text-gold-400">~2 400 €/mois</span>
               </div>
             </div>
