@@ -12,7 +12,7 @@ const SERVICES = [
   {
     number: "03",
     title: "Gestion immobilière",
-    items: ["Transparence avec nos propriétaires", "Ménage professionnel", "Linge premium", "Maintenance"],
+    items: ["Transparence avec nos propriétaires", "Maintenance"],
   },
 ];
 
