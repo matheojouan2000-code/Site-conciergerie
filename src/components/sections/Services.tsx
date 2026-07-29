@@ -2,7 +2,7 @@ const SERVICES = [
   {
     number: "01",
     title: "Gestion des annonces",
-    items: ["Photos professionnelles", "Annonce optimisée", "Tarification dynamique et stratégique", "Multi-plateformes"],
+    items: ["Annonce optimisée", "Tarification dynamique et stratégique", "Multi-plateformes"],
   },
   {
     number: "02",
