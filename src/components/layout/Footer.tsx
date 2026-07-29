@@ -24,7 +24,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm">
               <li><a href="#services" className="hover:text-terracotta-400">Services</a></li>
               <li><a href="#offres" className="hover:text-terracotta-400">Tarifs</a></li>
-              <li><a href="#calculateur" className="hover:text-terracotta-400">Estimation gratuite</a></li>
+              <li><a href="#audit" className="hover:text-terracotta-400">Audit d'annonce</a></li>
               <li><a href="#faq" className="hover:text-terracotta-400">FAQ</a></li>
               <li><a href="#rdv" className="hover:text-terracotta-400">Appel découverte</a></li>
             </ul>

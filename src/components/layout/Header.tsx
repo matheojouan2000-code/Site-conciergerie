@@ -49,8 +49,8 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button variant="primary" size="md" onClick={() => scrollToId("calculateur")}>
-            Estimer mes revenus
+          <Button variant="primary" size="md" onClick={() => scrollToId("rdv")}>
+            Réserver un appel
           </Button>
         </div>
 
@@ -81,10 +81,10 @@ export function Header() {
               className="mt-2 w-full"
               onClick={() => {
                 setMobileOpen(false);
-                scrollToId("calculateur");
+                scrollToId("rdv");
               }}
             >
-              Estimer mes revenus
+              Réserver un appel
             </Button>
           </nav>
         </div>

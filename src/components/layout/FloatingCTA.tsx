@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Phone, Calculator } from "lucide-react";
+import { Phone, CalendarCheck } from "lucide-react";
 import { scrollToId } from "../../lib/scroll";
 
 const PHONE_NUMBER = "+33612345678";
@@ -27,11 +27,11 @@ export function FloatingCTA() {
         {PHONE_DISPLAY}
       </a>
       <button
-        onClick={() => scrollToId("calculateur")}
+        onClick={() => scrollToId("rdv")}
         className="flex flex-1 items-center justify-center gap-2 rounded-md bg-terracotta-gradient py-3 text-sm font-semibold text-white shadow-terracotta"
       >
-        <Calculator size={16} />
-        Estimer mes revenus
+        <CalendarCheck size={16} />
+        Réserver un appel
       </button>
     </div>
   );

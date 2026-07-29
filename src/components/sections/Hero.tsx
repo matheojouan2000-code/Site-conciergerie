@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Home, ArrowRight, PhoneCall, Star } from "lucide-react";
+import { Home, ArrowRight, Tag, Star } from "lucide-react";
 import { Button } from "../ui/Button";
 import { scrollToId } from "../../lib/scroll";
 
@@ -29,18 +29,18 @@ export function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Button size="lg" onClick={() => scrollToId("calculateur")}>
-              Obtenir une estimation
+            <Button size="lg" onClick={() => scrollToId("rdv")}>
+              Réserver un appel découverte
               <ArrowRight size={16} />
             </Button>
             <Button
               variant="secondary"
               size="lg"
               className="normal-case tracking-normal"
-              onClick={() => scrollToId("rdv")}
+              onClick={() => scrollToId("offres")}
             >
-              <PhoneCall size={16} />
-              Réserver un appel découverte
+              <Tag size={16} />
+              Voir nos tarifs
             </Button>
           </div>
         </motion.div>

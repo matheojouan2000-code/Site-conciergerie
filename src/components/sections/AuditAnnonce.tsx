@@ -1,0 +1,59 @@
+import { CheckCircle2, Search } from "lucide-react";
+import { Button } from "../ui/Button";
+import { scrollToId } from "../../lib/scroll";
+
+const INCLUDED = [
+  "Analyse complète de votre annonce (photos, titre, description)",
+  "Étude de votre tarification face à la concurrence locale",
+  "Recommandations concrètes et priorisées",
+  "Rapport détaillé livré par écrit sous 5 jours",
+];
+
+export function AuditAnnonce() {
+  return (
+    <section id="audit" className="bg-cream-100 py-20 lg:py-28">
+      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 rounded-xl border border-charcoal-950/10 bg-white p-8 lg:grid-cols-5 lg:gap-12 lg:p-12">
+          <div className="lg:col-span-3">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-terracotta-600">
+              <Search size={14} />
+              Service à la carte
+            </span>
+            <h2 className="mt-3 text-balance font-display text-3xl font-semibold text-charcoal-950 sm:text-4xl">
+              Boostez votre annonce avec un audit expert
+            </h2>
+            <p className="mt-4 text-charcoal-900/65">
+              Vous gérez déjà votre bien vous-même ? Notre audit passe votre annonce au crible et
+              vous livre un plan d'action concret pour augmenter votre visibilité, votre taux de
+              réservation et vos revenus — sans passer par une gestion complète.
+            </p>
+            <p className="mt-3 text-sm text-charcoal-900/50">
+              Idéal en complément de notre offre de gestion, ou en solo si vous êtes autonome.
+            </p>
+
+            <ul className="mt-6 space-y-3">
+              {INCLUDED.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-charcoal-900/75">
+                  <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-terracotta-500" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="flex flex-col justify-center rounded-lg bg-cream-100 p-8 text-center lg:col-span-2">
+            <p className="text-sm text-charcoal-900/60">Tarif unique</p>
+            <p className="mt-1 font-display text-5xl font-semibold text-charcoal-950">
+              350<span className="text-xl">€</span>
+            </p>
+            <p className="mt-1 text-xs text-charcoal-900/50">TTC, sans engagement</p>
+
+            <Button size="lg" className="mt-6 w-full" onClick={() => scrollToId("rdv")}>
+              Commander mon audit
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

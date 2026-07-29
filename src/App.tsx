@@ -6,7 +6,7 @@ import { Hero } from "./components/sections/Hero";
 import { StatsBand } from "./components/sections/StatsBand";
 import { Services } from "./components/sections/Services";
 import { Profitability } from "./components/sections/Profitability";
-import { RevenueCalculator } from "./components/sections/RevenueCalculator";
+import { AuditAnnonce } from "./components/sections/AuditAnnonce";
 import { Offers } from "./components/sections/Offers";
 import { FAQ } from "./components/sections/FAQ";
 import { Booking } from "./components/sections/Booking";
@@ -20,7 +20,7 @@ function App() {
         <StatsBand />
         <Services />
         <Profitability />
-        <RevenueCalculator />
+        <AuditAnnonce />
         <Offers />
         <FAQ />
         <Booking />

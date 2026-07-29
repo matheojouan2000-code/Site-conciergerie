@@ -18,11 +18,12 @@ export function Profitability() {
           </p>
           <p className="mt-4 text-charcoal-900/65">
             Même un studio peut générer jusqu'à <strong className="text-charcoal-950">1 800&nbsp;€</strong> par mois.
-            Le potentiel exact dépend de la ville et du bien — calculez le vôtre en 30 secondes.
+            Le potentiel exact dépend de la ville et du bien — notre audit d'annonce vous donne une
+            analyse précise et chiffrée.
           </p>
 
-          <Button size="lg" className="mt-8" onClick={() => scrollToId("calculateur")}>
-            Estimer mon bien
+          <Button size="lg" className="mt-8" onClick={() => scrollToId("audit")}>
+            Découvrir l'audit d'annonce
           </Button>
         </div>
 
