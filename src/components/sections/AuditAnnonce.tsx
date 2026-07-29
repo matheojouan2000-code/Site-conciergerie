@@ -46,7 +46,7 @@ export function AuditAnnonce() {
             <p className="mt-1 font-display text-5xl font-semibold text-charcoal-950">
               350<span className="text-xl">€</span>
             </p>
-            <p className="mt-1 text-xs text-charcoal-900/50">TTC, sans engagement</p>
+            <p className="mt-1 text-xs text-charcoal-900/50">TTC</p>
 
             <Button size="lg" className="mt-6 w-full" onClick={() => scrollToId("rdv")}>
               Commander mon audit
