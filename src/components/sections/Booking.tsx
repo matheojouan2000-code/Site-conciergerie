@@ -17,8 +17,8 @@ export function Booking() {
           Parlons de votre bien en 15 minutes
         </h2>
         <p className="mt-4 text-white/60">
-          Un expert conciergerie répond à vos questions, évalue votre potentiel de revenus et vous
-          présente notre offre sur-mesure — sans engagement.
+          Un appel découverte gratuit pour faire connaissance&nbsp;: nous échangeons sur votre bien
+          et évaluons ensemble son potentiel de revenus.
         </p>
 
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
