@@ -2,10 +2,8 @@ import { CheckCircle2 } from "lucide-react";
 
 const INCLUDED = [
   "Gestion complète des réservations et communication avec les voyageurs",
-  "Ménage professionnel et gestion du linge après chaque séjour",
-  "Accueil personnalisé et remise des clés aux voyageurs",
   "Maintenance préventive et interventions d'urgence",
-  "Photos professionnelles et optimisation de vos annonces",
+  "Optimisation de vos annonces",
   "Stratégie tarifaire dynamique pour maximiser vos revenus",
   "Suivi détaillé des performances et des revenus",
 ];
