@@ -64,16 +64,16 @@ export function RevenueCalculator() {
   }
 
   return (
-    <section id="calculateur" className="bg-slate-50 py-20 lg:py-28">
+    <section id="calculateur" className="bg-cream-50 py-20 lg:py-28">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-semibold uppercase tracking-wide text-gold-600">
+          <span className="text-xs font-semibold uppercase tracking-wide text-terracotta-600">
             Simulateur gratuit
           </span>
-          <h2 className="mt-3 text-balance text-3xl font-extrabold text-navy-950 sm:text-4xl">
+          <h2 className="mt-3 text-balance font-display text-3xl font-semibold text-charcoal-950 sm:text-4xl">
             Calculez le potentiel de revenus de votre bien
           </h2>
-          <p className="mt-4 text-navy-900/60">
+          <p className="mt-4 text-charcoal-900/60">
             Renseignez quelques informations pour obtenir une estimation en temps réel, basée sur
             les données de marché de votre zone.
           </p>
@@ -81,17 +81,17 @@ export function RevenueCalculator() {
 
         <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-5 lg:gap-8">
           {/* Formulaire de paramètres */}
-          <div className="rounded-3xl border border-navy-900/10 bg-white p-6 shadow-sm lg:col-span-2 lg:p-8">
+          <div className="rounded-xl border border-charcoal-950/10 bg-white p-6 shadow-sm lg:col-span-2 lg:p-8">
             <div className="space-y-6">
               <div>
-                <label className="mb-2 flex items-center gap-2 text-sm font-medium text-navy-900/80">
-                  <MapPin size={16} className="text-gold-600" />
+                <label className="mb-2 flex items-center gap-2 text-sm font-medium text-charcoal-900/80">
+                  <MapPin size={16} className="text-terracotta-600" />
                   Ville / Quartier
                 </label>
                 <select
                   value={cityId}
                   onChange={(e) => setCityId(e.target.value)}
-                  className="w-full rounded-xl border border-navy-900/15 bg-white px-4 py-3 text-navy-950 outline-none transition-colors focus:border-gold-500 focus:ring-2 focus:ring-gold-500/40"
+                  className="w-full rounded-md border border-charcoal-950/15 bg-white px-4 py-3 text-charcoal-950 outline-none transition-colors focus:border-terracotta-500 focus:ring-2 focus:ring-terracotta-500/30"
                 >
                   {CITIES.map((city) => (
                     <option key={city.id} value={city.id}>
@@ -102,8 +102,8 @@ export function RevenueCalculator() {
               </div>
 
               <div>
-                <label className="mb-2 flex items-center gap-2 text-sm font-medium text-navy-900/80">
-                  <Home size={16} className="text-gold-600" />
+                <label className="mb-2 flex items-center gap-2 text-sm font-medium text-charcoal-900/80">
+                  <Home size={16} className="text-terracotta-600" />
                   Type de bien
                 </label>
                 <div className="grid grid-cols-2 gap-2">
@@ -112,10 +112,10 @@ export function RevenueCalculator() {
                       key={type.id}
                       type="button"
                       onClick={() => setPropertyType(type.id)}
-                      className={`rounded-xl border px-3 py-2.5 text-sm font-medium transition-colors ${
+                      className={`rounded-md border px-3 py-2.5 text-sm font-medium transition-colors ${
                         propertyType === type.id
-                          ? "border-gold-500 bg-gold-500/10 text-gold-700"
-                          : "border-navy-900/15 text-navy-900/70 hover:border-navy-900/30"
+                          ? "border-terracotta-500 bg-terracotta-500/10 text-terracotta-700"
+                          : "border-charcoal-950/15 text-charcoal-900/70 hover:border-charcoal-950/30"
                       }`}
                     >
                       {type.label}
@@ -125,12 +125,12 @@ export function RevenueCalculator() {
               </div>
 
               <div>
-                <label className="mb-2 flex items-center justify-between text-sm font-medium text-navy-900/80">
+                <label className="mb-2 flex items-center justify-between text-sm font-medium text-charcoal-900/80">
                   <span className="flex items-center gap-2">
-                    <BedDouble size={16} className="text-gold-600" />
+                    <BedDouble size={16} className="text-terracotta-600" />
                     Nombre de chambres
                   </span>
-                  <span className="font-display font-semibold text-navy-950">{bedrooms}</span>
+                  <span className="font-display font-semibold text-charcoal-950">{bedrooms}</span>
                 </label>
                 <input
                   type="range"
@@ -139,9 +139,9 @@ export function RevenueCalculator() {
                   step={1}
                   value={bedrooms}
                   onChange={(e) => setBedrooms(Number(e.target.value))}
-                  className="w-full accent-[#d1a13c]"
+                  className="w-full accent-[#cc8b3f]"
                 />
-                <div className="mt-1 flex justify-between text-xs text-navy-900/40">
+                <div className="mt-1 flex justify-between text-xs text-charcoal-900/40">
                   <span>Studio</span>
                   <span>5+ ch.</span>
                 </div>
@@ -151,25 +151,25 @@ export function RevenueCalculator() {
 
           {/* Résultats */}
           <div className="lg:col-span-3">
-            <div className="rounded-3xl bg-navy-gradient p-6 text-white shadow-navy sm:p-8">
-              <p className="text-xs font-semibold uppercase tracking-wide text-gold-400">
+            <div className="rounded-xl bg-charcoal-gradient p-6 text-white shadow-charcoal sm:p-8">
+              <p className="text-xs font-semibold uppercase tracking-wide text-terracotta-400">
                 Estimation en temps réel
               </p>
 
               <div className="mt-5 grid grid-cols-2 gap-3 sm:gap-4">
-                <div className="rounded-2xl bg-white/5 p-4">
+                <div className="rounded-lg bg-white/5 p-4">
                   <p className="text-xs text-white/50">Sans conciergerie</p>
                   <p className="mt-1 font-display text-xl font-bold text-white/70 sm:text-2xl">
                     {formatCurrency(estimate.monthlyWithoutConcierge)}
                   </p>
                   <p className="text-xs text-white/40">/mois</p>
                 </div>
-                <div className="rounded-2xl border border-gold-500/40 bg-gold-500/10 p-4">
-                  <p className="text-xs text-gold-300">Avec MJT Immobilier</p>
-                  <p className="mt-1 font-display text-xl font-bold text-gold-400 sm:text-2xl">
+                <div className="rounded-lg border border-terracotta-500/40 bg-terracotta-500/10 p-4">
+                  <p className="text-xs text-terracotta-300">Avec MJT Immobilier</p>
+                  <p className="mt-1 font-display text-xl font-bold text-terracotta-400 sm:text-2xl">
                     {formatCurrency(estimate.monthlyWithConcierge)}
                   </p>
-                  <p className="text-xs text-gold-300/70">/mois</p>
+                  <p className="text-xs text-terracotta-300/70">/mois</p>
                 </div>
               </div>
 
@@ -182,7 +182,7 @@ export function RevenueCalculator() {
                     exit={{ opacity: 0 }}
                     className="mt-6"
                   >
-                    <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-5">
+                    <div className="relative overflow-hidden rounded-lg border border-white/10 bg-white/5 p-5">
                       <div className="pointer-events-none select-none blur-sm">
                         <div className="flex justify-between text-sm">
                           <span>Revenu annuel estimé</span>
@@ -200,16 +200,16 @@ export function RevenueCalculator() {
                         </div>
                       </div>
 
-                      <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-navy-950/70 p-4 text-center backdrop-blur-[1px]">
-                        <Lock size={20} className="text-gold-400" />
+                      <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-charcoal-950/70 p-4 text-center backdrop-blur-[1px]">
+                        <Lock size={20} className="text-terracotta-400" />
                         <p className="text-sm font-medium text-white">
                           Débloquez le détail complet + votre rapport PDF
                         </p>
                       </div>
                     </div>
 
-                    <form onSubmit={handleSubmit} noValidate className="mt-5 space-y-3 rounded-2xl bg-white p-5 text-navy-950">
-                      <p className="text-sm font-semibold text-navy-900">
+                    <form onSubmit={handleSubmit} noValidate className="mt-5 space-y-3 rounded-lg bg-white p-5 text-charcoal-950">
+                      <p className="text-sm font-semibold text-charcoal-900">
                         Recevez votre estimation détaillée gratuitement
                       </p>
                       <Input
@@ -244,7 +244,7 @@ export function RevenueCalculator() {
                       <Button type="submit" className="w-full">
                         Débloquer mon estimation détaillée
                       </Button>
-                      <p className="text-center text-[11px] text-navy-900/40">
+                      <p className="text-center text-[11px] text-charcoal-900/40">
                         Vos données restent confidentielles et ne sont jamais revendues.
                       </p>
                     </form>
@@ -256,12 +256,12 @@ export function RevenueCalculator() {
                     animate={{ opacity: 1, y: 0 }}
                     className="mt-6 space-y-4"
                   >
-                    <div className="flex items-center gap-2 rounded-xl bg-green-500/10 px-4 py-3 text-sm font-medium text-green-300">
+                    <div className="flex items-center gap-2 rounded-lg bg-green-500/10 px-4 py-3 text-sm font-medium text-green-300">
                       <CheckCircle2 size={18} />
                       Merci {contact.firstName || ""} ! Voici votre estimation complète.
                     </div>
 
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-5 text-sm">
+                    <div className="rounded-lg border border-white/10 bg-white/5 p-5 text-sm">
                       <Row label="Tarif nuitée de référence" value={formatCurrency(estimate.nightlyRate)} />
                       <Row
                         label="Taux d'occupation optimisé"
@@ -307,7 +307,7 @@ function Row({ label, value, highlight }: { label: string; value: string; highli
   return (
     <div className="flex items-center justify-between border-b border-white/10 py-2.5 last:border-0">
       <span className="text-white/60">{label}</span>
-      <span className={`font-display font-semibold ${highlight ? "text-gold-400" : "text-white"}`}>
+      <span className={`font-display font-semibold ${highlight ? "text-terracotta-400" : "text-white"}`}>
         {value}
       </span>
     </div>

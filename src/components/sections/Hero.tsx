@@ -1,105 +1,82 @@
 import { motion } from "framer-motion";
-import { Star, ShieldCheck, TrendingUp, ArrowRight, PhoneCall } from "lucide-react";
+import { Home, ArrowRight, PhoneCall, Star } from "lucide-react";
 import { Button } from "../ui/Button";
 import { scrollToId } from "../../lib/scroll";
 
-const TRUST_ITEMS = [
-  { icon: TrendingUp, label: "+30% de revenus en moyenne" },
-  { icon: Star, label: "Note moyenne 4.9/5" },
-  { icon: ShieldCheck, label: "100+ logements gérés" },
-];
-
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden bg-navy-gradient pt-32 pb-20 lg:pt-44 lg:pb-28">
-      {/* Halo décoratifs */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -left-32 top-24 h-72 w-72 rounded-full bg-gold-500/20 blur-3xl animate-float"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-24 top-64 h-96 w-96 rounded-full bg-navy-500/40 blur-3xl animate-float"
-        style={{ animationDelay: "1.5s" }}
-      />
-
-      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-5 lg:grid-cols-2 lg:gap-10 lg:px-8">
+    <section id="top" className="relative overflow-hidden bg-cream-50 pt-32 pb-20 lg:pt-44 lg:pb-28">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
         {/* Colonne texte */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-gold-400">
-            Conciergerie premium · Places limitées par quartier
+          <span className="inline-flex items-center rounded-md bg-terracotta-500 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white">
+            Service premium
           </span>
 
-          <h1 className="mt-6 text-balance font-display text-4xl font-extrabold leading-[1.08] text-white sm:text-5xl lg:text-[3.4rem]">
-            Maximisez vos revenus locatifs{" "}
-            <span className="text-gold-gradient">sans lever le petit doigt</span>
+          <h1 className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.12] text-charcoal-950 sm:text-5xl lg:text-[3.3rem]">
+            <span className="font-bold">Transformez</span> votre bien et{" "}
+            <span className="font-bold text-terracotta-gradient">maximisez</span> vos revenus locatifs
           </h1>
 
-          <p className="mt-6 max-w-lg text-balance text-lg text-white/70">
-            Gestion 100% automatisée de votre bien Airbnb : annonce optimisée, tarification
-            dynamique, accueil voyageurs et ménage 5 étoiles. Commissions à la performance,
-            aucun frais fixe.
+          <p className="mt-6 max-w-lg text-balance text-lg text-charcoal-900/65">
+            Propriétaire d'un bien en location courte durée&nbsp;? MJT Immobilier gère 100% de
+            votre location : annonces, accueil voyageurs, ménage et tarification dynamique. Vous
+            profitez, on s'occupe du reste.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button size="lg" onClick={() => scrollToId("calculateur")}>
-              Estimer mes revenus gratuitement
-              <ArrowRight size={18} />
+              Obtenir une estimation
+              <ArrowRight size={16} />
             </Button>
-            <Button variant="ghost" size="lg" className="border border-white/20" onClick={() => scrollToId("rdv")}>
-              <PhoneCall size={18} />
+            <Button
+              variant="secondary"
+              size="lg"
+              className="normal-case tracking-normal"
+              onClick={() => scrollToId("rdv")}
+            >
+              <PhoneCall size={16} />
               Réserver un appel découverte
             </Button>
           </div>
-
-          <dl className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            {TRUST_ITEMS.map(({ icon: Icon, label }) => (
-              <div key={label} className="flex items-center gap-2.5 text-sm text-white/80">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10">
-                  <Icon size={16} className="text-gold-400" />
-                </span>
-                {label}
-              </div>
-            ))}
-          </dl>
         </motion.div>
 
-        {/* Widget d'estimation rapide (teaser) */}
+        {/* Visuel décoratif */}
         <motion.div
           initial={{ opacity: 0, y: 32, scale: 0.97 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="relative mx-auto w-full max-w-md"
+          className="relative mx-auto w-full max-w-lg"
         >
-          <div className="rounded-3xl border border-white/10 bg-white/[0.06] p-6 shadow-navy backdrop-blur-xl sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-wide text-gold-400">
-              Estimation express
-            </p>
-            <p className="mt-2 font-display text-lg font-semibold text-white">
-              Combien pourrait rapporter votre bien&nbsp;?
-            </p>
-
-            <div className="mt-6 space-y-3">
-              <div className="flex items-center justify-between rounded-xl bg-white/5 px-4 py-3">
-                <span className="text-sm text-white/60">Sans conciergerie</span>
-                <span className="font-display text-base font-semibold text-white/80">~1 100 €/mois</span>
-              </div>
-              <div className="flex items-center justify-between rounded-xl border border-gold-500/30 bg-gold-500/10 px-4 py-3">
-                <span className="text-sm text-gold-300">Avec MJT Immobilier</span>
-                <span className="font-display text-lg font-bold text-gold-400">~2 400 €/mois</span>
-              </div>
+          <div className="clip-blob relative aspect-[4/3.4] overflow-hidden bg-terracotta-gradient shadow-charcoal">
+            <div
+              aria-hidden
+              className="absolute -left-10 -top-10 h-56 w-56 rounded-full bg-white/15 blur-2xl animate-float"
+            />
+            <div
+              aria-hidden
+              className="absolute -bottom-16 -right-10 h-64 w-64 rounded-full bg-charcoal-950/15 blur-2xl animate-float"
+              style={{ animationDelay: "1.5s" }}
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Home size={72} strokeWidth={1} className="text-white/40" />
             </div>
+          </div>
 
-            <Button className="mt-6 w-full" onClick={() => scrollToId("calculateur")}>
-              Calculer mon estimation précise
-              <ArrowRight size={18} />
-            </Button>
-            <p className="mt-3 text-center text-xs text-white/40">
-              Exemple basé sur un T2 à Paris · Résultat personnalisé en 30 secondes
+          {/* Carte flottante de réassurance */}
+          <div className="absolute -bottom-6 left-1/2 w-[calc(100%-2.5rem)] -translate-x-1/2 rounded-lg border border-charcoal-950/10 bg-white p-4 shadow-charcoal sm:w-72">
+            <div className="flex items-center gap-1 text-terracotta-500">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star key={i} size={13} fill="currentColor" strokeWidth={0} />
+              ))}
+              <span className="ml-1.5 text-xs font-semibold text-charcoal-950">4.9/5</span>
+            </div>
+            <p className="mt-1.5 text-xs text-charcoal-900/60">
+              Note moyenne propriétaires &amp; voyageurs
             </p>
           </div>
         </motion.div>

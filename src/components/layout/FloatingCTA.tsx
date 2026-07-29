@@ -18,17 +18,17 @@ export function FloatingCTA() {
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 flex gap-2 border-t border-navy-900/10 bg-white/95 p-3 shadow-[0_-10px_30px_-15px_rgba(5,11,26,0.3)] backdrop-blur-md lg:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-40 flex gap-2 border-t border-charcoal-950/10 bg-white/95 p-3 shadow-[0_-10px_30px_-15px_rgba(28,23,18,0.25)] backdrop-blur-md lg:hidden">
       <a
         href={`tel:${PHONE_NUMBER}`}
-        className="flex flex-1 items-center justify-center gap-2 rounded-full border border-navy-900/15 py-3 text-sm font-semibold text-navy-900"
+        className="flex flex-1 items-center justify-center gap-2 rounded-md border border-charcoal-950/15 py-3 text-sm font-semibold text-charcoal-950"
       >
         <Phone size={16} />
         {PHONE_DISPLAY}
       </a>
       <button
         onClick={() => scrollToId("calculateur")}
-        className="flex flex-1 items-center justify-center gap-2 rounded-full bg-gold-gradient py-3 text-sm font-semibold text-navy-950 shadow-gold"
+        className="flex flex-1 items-center justify-center gap-2 rounded-md bg-terracotta-gradient py-3 text-sm font-semibold text-white shadow-terracotta"
       >
         <Calculator size={16} />
         Estimer mes revenus

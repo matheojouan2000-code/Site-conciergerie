@@ -7,13 +7,13 @@ const EMAIL = "contact@mjt-immobilier.fr";
 
 export function Booking() {
   return (
-    <section id="rdv" className="bg-navy-gradient py-20 lg:py-28">
+    <section id="rdv" className="bg-charcoal-gradient py-20 lg:py-28">
       <div className="mx-auto max-w-3xl px-5 text-center lg:px-8">
-        <span className="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-gold-400">
+        <span className="inline-flex items-center gap-2 rounded-md border border-terracotta-500/30 bg-terracotta-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-terracotta-400">
           <CalendarCheck size={14} />
           Appel découverte gratuit
         </span>
-        <h2 className="mt-5 text-balance font-display text-3xl font-extrabold text-white sm:text-4xl">
+        <h2 className="mt-5 text-balance font-display text-3xl font-semibold text-white sm:text-4xl">
           Parlons de votre bien en 15 minutes
         </h2>
         <p className="mt-4 text-white/60">
@@ -29,7 +29,7 @@ export function Booking() {
           <Button
             variant="ghost"
             size="lg"
-            className="border border-white/20"
+            className="border border-white/20 normal-case tracking-normal"
             onClick={() => window.open(`mailto:${EMAIL}`, "_self")}
           >
             <Mail size={18} />

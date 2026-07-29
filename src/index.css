@@ -1,24 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  /* Palette premium : bleu nuit / or */
-  --color-navy-950: #050b1a;
-  --color-navy-900: #0a1229;
-  --color-navy-800: #101c3a;
-  --color-navy-700: #182750;
-  --color-navy-600: #223468;
-  --color-navy-500: #2f4483;
+  /* Palette boutique : crème / terracotta / charbon */
+  --color-cream-50: #fbf9f5;
+  --color-cream-100: #f5f1ea;
+  --color-cream-200: #ede6d9;
+  --color-cream-300: #e2d7c3;
 
-  --color-gold-400: #f3d68a;
-  --color-gold-500: #e8bf5f;
-  --color-gold-600: #d1a13c;
-  --color-gold-700: #a97f28;
+  --color-terracotta-400: #dba15f;
+  --color-terracotta-500: #cc8b3f;
+  --color-terracotta-600: #b3762f;
+  --color-terracotta-700: #8f5e26;
 
-  --font-display: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --color-charcoal-950: #1c1712;
+  --color-charcoal-900: #241d16;
+  --color-charcoal-800: #362c21;
+  --color-charcoal-700: #4a3d2e;
+
+  --font-display: "Playfair Display", "Plus Jakarta Sans", serif;
   --font-sans: "Inter", system-ui, sans-serif;
 
-  --shadow-gold: 0 8px 30px -8px rgba(232, 191, 95, 0.45);
-  --shadow-navy: 0 20px 50px -20px rgba(5, 11, 26, 0.55);
+  --shadow-terracotta: 0 8px 30px -8px rgba(204, 139, 63, 0.4);
+  --shadow-charcoal: 0 20px 50px -20px rgba(28, 23, 18, 0.35);
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-slow: pulse-slow 3s ease-in-out infinite;
@@ -42,8 +45,8 @@
   body {
     margin: 0;
     font-family: var(--font-sans);
-    background-color: #ffffff;
-    color: var(--color-navy-900);
+    background-color: var(--color-cream-50);
+    color: var(--color-charcoal-950);
     -webkit-font-smoothing: antialiased;
   }
 
@@ -57,18 +60,23 @@
     text-wrap: balance;
   }
 
-  .bg-navy-gradient {
-    background: radial-gradient(120% 120% at 50% 0%, var(--color-navy-800) 0%, var(--color-navy-950) 60%);
+  .bg-charcoal-gradient {
+    background: radial-gradient(120% 120% at 50% 0%, var(--color-charcoal-800) 0%, var(--color-charcoal-950) 60%);
   }
 
-  .bg-gold-gradient {
-    background: linear-gradient(135deg, var(--color-gold-400) 0%, var(--color-gold-600) 100%);
+  .bg-terracotta-gradient {
+    background: linear-gradient(135deg, var(--color-terracotta-400) 0%, var(--color-terracotta-600) 100%);
   }
 
-  .text-gold-gradient {
-    background: linear-gradient(135deg, var(--color-gold-400) 0%, var(--color-gold-600) 100%);
+  .text-terracotta-gradient {
+    background: linear-gradient(135deg, var(--color-terracotta-400) 0%, var(--color-terracotta-700) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+
+  /* Découpe ovale façon "boutique-hôtel" pour les visuels */
+  .clip-blob {
+    border-radius: 62% 38% 55% 45% / 48% 45% 55% 52%;
   }
 }

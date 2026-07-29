@@ -12,13 +12,13 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
 
     return (
       <label htmlFor={inputId} className="block text-left">
-        <span className="mb-1.5 block text-sm font-medium text-navy-900/80">{label}</span>
+        <span className="mb-1.5 block text-sm font-medium text-charcoal-950/80">{label}</span>
         <input
           ref={ref}
           id={inputId}
-          className={`w-full rounded-xl border bg-white px-4 py-3 text-navy-950 placeholder:text-navy-900/35
-            outline-none transition-colors focus:ring-2 focus:ring-gold-500/40
-            ${error ? "border-red-400 focus:border-red-400" : "border-navy-900/15 focus:border-gold-500"}
+          className={`w-full rounded-md border bg-white px-4 py-3 text-charcoal-950 placeholder:text-charcoal-950/35
+            outline-none transition-colors focus:ring-2 focus:ring-terracotta-500/30
+            ${error ? "border-red-400 focus:border-red-400" : "border-charcoal-950/15 focus:border-terracotta-500"}
             ${className}`}
           aria-invalid={!!error}
           {...props}
