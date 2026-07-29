@@ -4,7 +4,7 @@ import { ChevronDown } from "lucide-react";
 const QUESTIONS = [
   {
     q: "Quelle commission prenez-vous ?",
-    a: "Notre commission démarre à 15% TTC de vos revenus locatifs, sans frais fixe. Si votre bien ne génère pas de revenus, nous ne prenons aucune commission.",
+    a: "Notre commission démarre à 20% TTC de vos revenus locatifs, sans frais fixe. Si votre bien ne génère pas de revenus, nous ne prenons aucune commission.",
   },
   {
     q: "Mon bien est-il assuré pendant les locations ?",

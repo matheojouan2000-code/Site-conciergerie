@@ -23,7 +23,7 @@ export function Offers() {
           <div className="rounded-xl bg-terracotta-gradient p-8 text-white lg:col-span-2">
             <p className="text-sm text-white/80">À partir de</p>
             <p className="font-display text-6xl font-semibold">
-              15<span className="text-2xl">% TTC</span>
+              20<span className="text-2xl">% TTC</span>
             </p>
             <p className="mt-2 text-sm text-white/85">de commission sur vos revenus locatifs</p>
 
