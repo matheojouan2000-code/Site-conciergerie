@@ -47,11 +47,11 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm">
               <li className="flex items-center gap-2">
                 <Phone size={14} className="text-terracotta-500" />
-                06 12 34 56 78
+                <a href="tel:+33672417304" className="hover:text-terracotta-400">06 72 41 73 04</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} className="text-terracotta-500" />
-                contact@mjt-immobilier.fr
+                <a href="mailto:contact@mjt-immobilier.fr" className="hover:text-terracotta-400">contact@mjt-immobilier.fr</a>
               </li>
             </ul>
           </div>

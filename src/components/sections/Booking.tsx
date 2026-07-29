@@ -1,8 +1,8 @@
 import { CalendarCheck, PhoneCall, Mail } from "lucide-react";
 import { Button } from "../ui/Button";
 
-const PHONE_NUMBER = "+33612345678";
-const PHONE_DISPLAY = "06 12 34 56 78";
+const PHONE_NUMBER = "+33672417304";
+const PHONE_DISPLAY = "06 72 41 73 04";
 const EMAIL = "contact@mjt-immobilier.fr";
 
 export function Booking() {

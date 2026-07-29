@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Phone, CalendarCheck } from "lucide-react";
 import { scrollToId } from "../../lib/scroll";
 
-const PHONE_NUMBER = "+33612345678";
-const PHONE_DISPLAY = "06 12 34 56 78";
+const PHONE_NUMBER = "+33672417304";
+const PHONE_DISPLAY = "06 72 41 73 04";
 
 export function FloatingCTA() {
   const [visible, setVisible] = useState(false);
