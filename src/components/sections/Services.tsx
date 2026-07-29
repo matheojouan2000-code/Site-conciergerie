@@ -9,11 +9,6 @@ const SERVICES = [
     title: "Gestion des voyageurs",
     items: ["Contrôle des voyageurs", "Communication 7j/7", "Gestion des incidents"],
   },
-  {
-    number: "03",
-    title: "Gestion immobilière",
-    items: ["Transparence avec nos propriétaires", "Maintenance"],
-  },
 ];
 
 export function Services() {
@@ -24,7 +19,7 @@ export function Services() {
           Services
         </span>
 
-        <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+        <div className="mt-8 grid max-w-2xl grid-cols-1 gap-12 sm:grid-cols-2 lg:gap-16">
           {SERVICES.map((service) => (
             <div key={service.number} className="border-t border-charcoal-950/15 pt-6">
               <p className="font-display text-3xl text-terracotta-500">{service.number}.</p>
