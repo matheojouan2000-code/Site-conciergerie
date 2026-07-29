@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Home, ArrowRight, Tag, Star } from "lucide-react";
+import { ArrowRight, Tag, Star } from "lucide-react";
 import { Button } from "../ui/Button";
 import { scrollToId } from "../../lib/scroll";
+import livingRoom from "../../assets/living-room.jpg";
 
 export function Hero() {
   return (
@@ -52,19 +53,12 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="relative mx-auto w-full max-w-lg"
         >
-          <div className="clip-blob relative aspect-[4/3.4] overflow-hidden bg-terracotta-gradient shadow-charcoal">
-            <div
-              aria-hidden
-              className="absolute -left-10 -top-10 h-56 w-56 rounded-full bg-white/15 blur-2xl animate-float"
+          <div className="clip-blob relative aspect-[4/3.4] overflow-hidden shadow-charcoal">
+            <img
+              src={livingRoom}
+              alt="Salon rénové et décoré d'un bien géré par MJT Immobilier"
+              className="h-full w-full object-cover"
             />
-            <div
-              aria-hidden
-              className="absolute -bottom-16 -right-10 h-64 w-64 rounded-full bg-charcoal-950/15 blur-2xl animate-float"
-              style={{ animationDelay: "1.5s" }}
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Home size={72} strokeWidth={1} className="text-white/40" />
-            </div>
           </div>
 
           {/* Carte flottante de réassurance */}
