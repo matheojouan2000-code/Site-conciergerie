@@ -51,7 +51,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} className="text-terracotta-500" />
-                <a href="mailto:contact@mjt-immobilier.fr" className="hover:text-terracotta-400">contact@mjt-immobilier.fr</a>
+                <a href="mailto:mjtimmobilier94@gmail.com" className="hover:text-terracotta-400">mjtimmobilier94@gmail.com</a>
               </li>
             </ul>
           </div>

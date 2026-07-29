@@ -3,7 +3,7 @@ import { Button } from "../ui/Button";
 
 const PHONE_NUMBER = "+33672417304";
 const PHONE_DISPLAY = "06 72 41 73 04";
-const EMAIL = "contact@mjt-immobilier.fr";
+const EMAIL = "mjtimmobilier94@gmail.com";
 
 export function Booking() {
   return (
