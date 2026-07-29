@@ -7,7 +7,7 @@ const SERVICES = [
   {
     number: "02",
     title: "Gestion des voyageurs",
-    items: ["Contrôle des voyageurs", "Check-in / Check-out", "Communication 7j/7", "Gestion des incidents"],
+    items: ["Contrôle des voyageurs", "Communication 7j/7", "Gestion des incidents"],
   },
   {
     number: "03",
