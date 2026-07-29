@@ -1,5 +1,5 @@
 const STATS = [
-  { value: "+30%", label: "De revenus supplémentaires" },
+  { value: "+20%", label: "De revenus supplémentaires" },
   { value: "83%", label: "Taux d'occupation moyen" },
   { value: "4.9/5", label: "Note moyenne" },
 ];
