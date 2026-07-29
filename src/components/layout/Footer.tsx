@@ -1,6 +1,6 @@
 import { KeyRound, MapPin, Mail, Phone } from "lucide-react";
 
-const ZONES = ["Paris", "Nice / Côte d'Azur", "Biarritz", "Annecy", "Bordeaux", "Lyon", "Marseille"];
+const ZONES = ["Nantes", "Paris", "Bordeaux"];
 
 export function Footer() {
   return (
@@ -32,7 +32,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-display text-sm font-semibold text-white">Zones d'intervention</h3>
-            <ul className="mt-4 grid grid-cols-2 gap-2.5 text-sm">
+            <ul className="mt-4 space-y-2.5 text-sm">
               {ZONES.map((zone) => (
                 <li key={zone} className="flex items-center gap-1.5">
                   <MapPin size={12} className="text-terracotta-500" />
