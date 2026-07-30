@@ -17,7 +17,7 @@ export function AuditAnnonce() {
           <div className="lg:col-span-3">
             <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-gold-600">
               <Search size={14} />
-              Service à la carte
+              Gardez 100% de vos revenus
             </span>
             <h2 className="mt-3 text-balance font-display text-3xl font-semibold text-forest-950 sm:text-4xl">
               Boostez votre annonce avec un audit expert
