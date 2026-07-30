@@ -20,10 +20,7 @@ export function Services() {
     <section id="services" className="bg-cream-100 py-20 lg:py-28">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <div className="text-center">
-          <span className="text-xs font-semibold uppercase tracking-wide text-gold-600">
-            Ce que nous prenons en charge
-          </span>
-          <h2 className="mt-3 text-balance font-display text-3xl font-semibold text-forest-950 sm:text-4xl">
+          <h2 className="text-balance font-display text-3xl font-semibold text-forest-950 sm:text-4xl">
             Services
           </h2>
         </div>
