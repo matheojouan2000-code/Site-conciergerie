@@ -1,11 +1,13 @@
+import { KeyRound } from "lucide-react";
+
 export function SectionDivider() {
   return (
-    <div aria-hidden="true" className="flex items-center justify-center gap-5 bg-cream-50 py-14">
-      <span className="h-px w-24 bg-gradient-to-r from-transparent to-gold-500/60 sm:w-40" />
-      <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-gold-500/50">
-        <span className="h-1.5 w-1.5 rotate-45 bg-gold-500" />
+    <div aria-hidden="true" className="flex items-center justify-center gap-6 bg-cream-50 py-16">
+      <span className="h-px w-20 bg-gradient-to-r from-transparent via-gold-500/40 to-gold-500/70 sm:w-44" />
+      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold-gradient text-white shadow-gold ring-4 ring-cream-100">
+        <KeyRound size={18} strokeWidth={1.75} />
       </span>
-      <span className="h-px w-24 bg-gradient-to-l from-transparent to-gold-500/60 sm:w-40" />
+      <span className="h-px w-20 bg-gradient-to-l from-transparent via-gold-500/40 to-gold-500/70 sm:w-44" />
     </div>
   );
 }
