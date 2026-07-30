@@ -1,27 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  /* Palette premium : vert sapin / or */
-  --color-cream-50: #faf9f6;
-  --color-cream-100: #f4f2ec;
-  --color-cream-200: #e9e5d8;
-  --color-cream-300: #dbd4bf;
+  /* Palette premium : beige crème / or (forest-* sert de neutre sombre chaud, plus vert) */
+  --color-cream-50: #faf8f3;
+  --color-cream-100: #f2ebdd;
+  --color-cream-200: #e6d9c0;
+  --color-cream-300: #d6c39d;
 
   --color-gold-400: #e3c67e;
   --color-gold-500: #cda856;
   --color-gold-600: #ab8639;
   --color-gold-700: #856429;
 
-  --color-forest-950: #0a1a13;
-  --color-forest-900: #0f2419;
-  --color-forest-800: #17392a;
-  --color-forest-700: #1f5239;
+  --color-forest-950: #211c16;
+  --color-forest-900: #2b241c;
+  --color-forest-800: #423628;
+  --color-forest-700: #5c4a35;
 
   --font-display: "Fraunces", "Plus Jakarta Sans", serif;
   --font-sans: "Inter", system-ui, sans-serif;
 
   --shadow-gold: 0 8px 30px -8px rgba(205, 168, 86, 0.4);
-  --shadow-forest: 0 20px 50px -20px rgba(10, 26, 19, 0.4);
+  --shadow-forest: 0 20px 50px -20px rgba(33, 28, 22, 0.4);
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-slow: pulse-slow 3s ease-in-out infinite;
