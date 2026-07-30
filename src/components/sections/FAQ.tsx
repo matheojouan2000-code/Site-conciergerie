@@ -15,8 +15,8 @@ const QUESTIONS = [
     a: "Non, notre accord est sans engagement de durée. Vous pouvez arrêter la collaboration à tout moment avec un simple préavis.",
   },
   {
-    q: "Comment se passe la remise des clés aux voyageurs ?",
-    a: "Nous gérons l'intégralité du check-in et du check-out : remise des clés en personne ou via une boîte à clés sécurisée, selon votre préférence.",
+    q: "Suis-je informé de chaque réservation ?",
+    a: "Oui, vous êtes prévenu à chaque nouvelle réservation et pouvez suivre à tout moment le calendrier d'occupation de votre bien.",
   },
   {
     q: "Sur quelles plateformes mon bien sera-t-il diffusé ?",
