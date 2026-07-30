@@ -46,8 +46,8 @@ export function Services() {
               </h3>
               <ul className="mt-5 space-y-2.5 text-sm text-forest-900/70">
                 {service.items.map((item) => (
-                  <li key={item} className="flex items-center justify-center gap-2">
-                    <span className="h-1 w-1 shrink-0 rounded-full bg-gold-500" />
+                  <li key={item}>
+                    <span className="mr-1.5 inline-block h-1 w-1 -translate-y-0.5 rounded-full bg-gold-500 align-middle" />
                     {item}
                   </li>
                 ))}
