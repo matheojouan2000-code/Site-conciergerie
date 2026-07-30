@@ -5,7 +5,7 @@ const SERVICES = [
     number: "01",
     icon: Megaphone,
     title: "Gestion des annonces",
-    items: ["Annonce optimisée", "Tarification dynamique et stratégique", "Multi-plateformes"],
+    items: ["Photos professionnelles", "Annonce optimisée", "Tarification dynamique et stratégique", "Multi-plateformes"],
   },
   {
     number: "02",
