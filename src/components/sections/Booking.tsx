@@ -7,9 +7,9 @@ const EMAIL = "mjtimmobilier94@gmail.com";
 
 export function Booking() {
   return (
-    <section id="rdv" className="bg-charcoal-gradient py-20 lg:py-28">
+    <section id="rdv" className="bg-forest-gradient py-20 lg:py-28">
       <div className="mx-auto max-w-3xl px-5 text-center lg:px-8">
-        <span className="inline-flex items-center gap-2 rounded-md border border-terracotta-500/30 bg-terracotta-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-terracotta-400">
+        <span className="inline-flex items-center gap-2 rounded-md border border-gold-500/30 bg-gold-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-gold-400">
           <CalendarCheck size={14} />
           Appel découverte gratuit
         </span>

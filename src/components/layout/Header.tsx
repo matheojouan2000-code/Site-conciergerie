@@ -25,12 +25,12 @@ export function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${
-        scrolled ? "border-charcoal-950/10 bg-cream-50/90 backdrop-blur-md" : "border-transparent bg-cream-50/60"
+        scrolled ? "border-forest-950/10 bg-cream-50/90 backdrop-blur-md" : "border-transparent bg-cream-50/60"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <a href="#top" className="flex items-center gap-2 text-charcoal-950">
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-terracotta-gradient text-white">
+        <a href="#top" className="flex items-center gap-2 text-forest-950">
+          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-gold-gradient text-white">
             <KeyRound size={18} strokeWidth={2.25} />
           </span>
           <span className="font-display text-lg font-semibold tracking-tight">MJT Immobilier</span>
@@ -41,7 +41,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-charcoal-900/70 transition-colors hover:text-terracotta-600"
+              className="text-sm font-medium text-forest-900/70 transition-colors hover:text-gold-600"
             >
               {link.label}
             </a>
@@ -55,7 +55,7 @@ export function Header() {
         </div>
 
         <button
-          className="text-charcoal-950 lg:hidden"
+          className="text-forest-950 lg:hidden"
           aria-label="Ouvrir le menu"
           onClick={() => setMobileOpen((v) => !v)}
         >
@@ -64,14 +64,14 @@ export function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-charcoal-950/10 bg-cream-50 px-5 py-6 lg:hidden">
+        <div className="border-t border-forest-950/10 bg-cream-50 px-5 py-6 lg:hidden">
           <nav className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-base font-medium text-charcoal-900/80 hover:text-terracotta-600"
+                className="text-base font-medium text-forest-900/80 hover:text-gold-600"
               >
                 {link.label}
               </a>

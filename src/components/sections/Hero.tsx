@@ -14,16 +14,16 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-flex items-center rounded-md bg-terracotta-500 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white">
+          <span className="inline-flex items-center rounded-md bg-gold-500 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white">
             Service premium
           </span>
 
-          <h1 className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.12] text-charcoal-950 sm:text-5xl lg:text-[3.3rem]">
+          <h1 className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.12] text-forest-950 sm:text-5xl lg:text-[3.3rem]">
             <span className="font-bold">Votre bien travaille pour vous</span>,{" "}
-            <span className="font-bold text-terracotta-gradient">sans effort de votre part</span>.
+            <span className="font-bold text-gold-gradient">sans effort de votre part</span>.
           </h1>
 
-          <p className="mt-6 max-w-lg text-balance text-lg text-charcoal-900/65">
+          <p className="mt-6 max-w-lg text-balance text-lg text-forest-900/65">
             Vous possédez un logement destiné à la location courte durée&nbsp;? MJT Immobilier
             prend en charge l'intégralité de sa gestion : création des annonces, accueil de vos
             voyageurs, entretien du logement et ajustement des prix en temps réel, pour que vos
@@ -54,7 +54,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="relative mx-auto w-full max-w-lg"
         >
-          <div className="clip-blob relative aspect-[4/3.4] overflow-hidden shadow-charcoal">
+          <div className="clip-blob relative aspect-[4/3.4] overflow-hidden shadow-forest">
             <img
               src={livingRoom}
               alt="Salon rénové et décoré d'un bien géré par MJT Immobilier"
@@ -63,14 +63,14 @@ export function Hero() {
           </div>
 
           {/* Carte flottante de réassurance */}
-          <div className="absolute -bottom-6 left-1/2 w-[calc(100%-2.5rem)] -translate-x-1/2 rounded-lg border border-charcoal-950/10 bg-white p-4 shadow-charcoal sm:w-72">
-            <div className="flex items-center gap-1 text-terracotta-500">
+          <div className="absolute -bottom-6 left-1/2 w-[calc(100%-2.5rem)] -translate-x-1/2 rounded-lg border border-forest-950/10 bg-white p-4 shadow-forest sm:w-72">
+            <div className="flex items-center gap-1 text-gold-500">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} size={13} fill="currentColor" strokeWidth={0} />
               ))}
-              <span className="ml-1.5 text-xs font-semibold text-charcoal-950">4.9/5</span>
+              <span className="ml-1.5 text-xs font-semibold text-forest-950">4.9/5</span>
             </div>
-            <p className="mt-1.5 text-xs text-charcoal-900/60">
+            <p className="mt-1.5 text-xs text-forest-900/60">
               Note moyenne propriétaires &amp; voyageurs
             </p>
           </div>

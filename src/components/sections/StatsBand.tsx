@@ -6,7 +6,7 @@ const STATS = [
 
 export function StatsBand() {
   return (
-    <section className="bg-terracotta-gradient py-14">
+    <section className="bg-gold-gradient py-14">
       <div className="mx-auto grid max-w-2xl grid-cols-3 gap-y-10 px-5 text-center text-white lg:px-8">
         {STATS.map((stat, i) => (
           <div
