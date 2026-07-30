@@ -1,4 +1,4 @@
-import { Megaphone, Users } from "lucide-react";
+import { Megaphone, Users, Home } from "lucide-react";
 
 const SERVICES = [
   {
@@ -13,6 +13,12 @@ const SERVICES = [
     title: "Gestion des voyageurs",
     items: ["Contrôle des voyageurs", "Check-in / Check-out", "Communication 7j/7", "Gestion des incidents"],
   },
+  {
+    number: "03",
+    icon: Home,
+    title: "Gestion immobilière",
+    items: ["Transparence avec nos propriétaires", "Ménage professionnel", "Linge premium", "Maintenance"],
+  },
 ];
 
 export function Services() {
@@ -25,7 +31,7 @@ export function Services() {
           </h2>
         </div>
 
-        <div className="mx-auto mt-14 grid max-w-4xl grid-cols-1 gap-10 sm:grid-cols-2 lg:gap-16">
+        <div className="mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
           {SERVICES.map((service) => (
             <div
               key={service.number}
