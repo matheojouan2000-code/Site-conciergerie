@@ -5,7 +5,6 @@ import { WhatsAppButton } from "./components/layout/WhatsAppButton";
 import { Hero } from "./components/sections/Hero";
 import { StatsBand } from "./components/sections/StatsBand";
 import { Services } from "./components/sections/Services";
-import { Profitability } from "./components/sections/Profitability";
 import { AuditAnnonce } from "./components/sections/AuditAnnonce";
 import { Offers } from "./components/sections/Offers";
 import { FAQ } from "./components/sections/FAQ";
@@ -19,7 +18,6 @@ function App() {
         <Hero />
         <StatsBand />
         <Services />
-        <Profitability />
         <AuditAnnonce />
         <Offers />
         <FAQ />
