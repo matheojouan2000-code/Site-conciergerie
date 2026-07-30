@@ -10,7 +10,7 @@ const INCLUDED = [
 
 export function Offers() {
   return (
-    <section id="offres" className="bg-cream-100 py-20 lg:py-28">
+    <section id="offres" className="bg-cream-50 py-20 lg:py-28">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
           <h2 className="font-display text-3xl font-semibold text-forest-950">Nos offres</h2>

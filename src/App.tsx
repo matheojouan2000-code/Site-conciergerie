@@ -2,6 +2,7 @@ import { Header } from "./components/layout/Header";
 import { Footer } from "./components/layout/Footer";
 import { FloatingCTA } from "./components/layout/FloatingCTA";
 import { WhatsAppButton } from "./components/layout/WhatsAppButton";
+import { SectionDivider } from "./components/layout/SectionDivider";
 import { Hero } from "./components/sections/Hero";
 import { StatsBand } from "./components/sections/StatsBand";
 import { Services } from "./components/sections/Services";
@@ -18,8 +19,11 @@ function App() {
         <Hero />
         <StatsBand />
         <Services />
+        <SectionDivider />
         <Offers />
+        <SectionDivider />
         <AuditAnnonce />
+        <SectionDivider />
         <FAQ />
         <Booking />
       </main>
