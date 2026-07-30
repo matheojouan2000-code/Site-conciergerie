@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Tag, Star } from "lucide-react";
+import { ArrowRight, Tag } from "lucide-react";
 import { Button } from "../ui/Button";
 import { scrollToId } from "../../lib/scroll";
 import livingRoom from "../../assets/living-room.jpg";
@@ -60,19 +60,6 @@ export function Hero() {
               alt="Salon rénové et décoré d'un bien géré par MJT Immobilier"
               className="h-full w-full object-cover"
             />
-          </div>
-
-          {/* Carte flottante de réassurance */}
-          <div className="absolute -bottom-6 left-1/2 w-[calc(100%-2.5rem)] -translate-x-1/2 rounded-lg border border-forest-950/10 bg-white p-4 shadow-forest sm:w-72">
-            <div className="flex items-center gap-1 text-gold-500">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={13} fill="currentColor" strokeWidth={0} />
-              ))}
-              <span className="ml-1.5 text-xs font-semibold text-forest-950">4.9/5</span>
-            </div>
-            <p className="mt-1.5 text-xs text-forest-900/60">
-              Note moyenne propriétaires &amp; voyageurs
-            </p>
           </div>
         </motion.div>
       </div>
