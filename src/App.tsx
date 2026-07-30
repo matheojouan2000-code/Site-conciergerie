@@ -18,8 +18,8 @@ function App() {
         <Hero />
         <StatsBand />
         <Services />
-        <AuditAnnonce />
         <Offers />
+        <AuditAnnonce />
         <FAQ />
         <Booking />
       </main>
