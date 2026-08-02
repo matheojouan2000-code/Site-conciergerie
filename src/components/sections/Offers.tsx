@@ -19,7 +19,7 @@ export function Offers() {
 
         <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-12">
           <div className="rounded-xl bg-gold-gradient p-8 text-white lg:col-span-2">
-            <p className="text-sm text-white/80">À partir de</p>
+            <p className="text-sm text-white/80">Seulement</p>
             <p className="font-display text-6xl font-semibold">
               20<span className="text-2xl">% TTC</span>
             </p>
