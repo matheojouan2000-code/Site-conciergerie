@@ -14,10 +14,10 @@ palette or / forêt déjà utilisée sur le site (`src/index.css`).
 
 ## Palette
 
-- Or : `#f3d68a → #cda856 → #ab8639` (dégradé)
-- Fond du badge : `#423628 → #211c16`
-- Texte clair : `#faf8f3`
-- Texte foncé : `#211c16`
+- Or : `#e3c67e → #cda856 → #ab8639` (dégradé)
+- Fond du badge (médaillon) : `#ffffff → #f2ebdd` (blanc/crème)
+- Texte clair (fond sombre) : `#faf8f3`
+- Texte foncé (fond clair) : `#211c16`
 
 ## Typographies
 

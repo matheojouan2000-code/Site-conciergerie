@@ -1,25 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
   <defs>
     <radialGradient id="bg" cx="50%" cy="38%" r="75%">
-      <stop offset="0%" stop-color="#423628"/>
-      <stop offset="100%" stop-color="#211c16"/>
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f2ebdd"/>
     </radialGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#f3d68a"/>
+      <stop offset="0%" stop-color="#e3c67e"/>
       <stop offset="50%" stop-color="#cda856"/>
       <stop offset="100%" stop-color="#ab8639"/>
     </linearGradient>
     <linearGradient id="goldSoft" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#cda856" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#e3c67e"/>
+      <stop offset="50%" stop-color="#ab8639"/>
       <stop offset="100%" stop-color="#cda856" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <!-- outer disc -->
   <circle cx="100" cy="100" r="98" fill="url(#bg)"/>
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#e6d9c0" stroke-width="1"/>
   <circle cx="100" cy="100" r="95.5" fill="none" stroke="url(#gold)" stroke-width="2"/>
-  <circle cx="100" cy="100" r="84" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.55"/>
+  <circle cx="100" cy="100" r="84" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.6"/>
 
   <!-- four cardinal diamonds -->
   <g fill="url(#gold)">
@@ -52,7 +53,7 @@
 
   <!-- PRESTIGE arc -->
   <path id="arc" d="M 44.8 146.3 A 72 72 0 0 0 155.2 146.3" fill="none"/>
-  <text font-family="'Inter','Plus Jakarta Sans',sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#e6d9c0">
+  <text font-family="'Inter','Plus Jakarta Sans',sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#5c4a35">
     <textPath href="#arc" startOffset="50%" text-anchor="middle">PRESTIGE</textPath>
   </text>
 </svg>

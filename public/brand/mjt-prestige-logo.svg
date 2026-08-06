@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" fill="none">
   <defs>
     <radialGradient id="bg" cx="50%" cy="38%" r="75%">
-      <stop offset="0%" stop-color="#423628"/>
-      <stop offset="100%" stop-color="#211c16"/>
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f2ebdd"/>
     </radialGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="160" y2="160" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#f3d68a"/>
+      <stop offset="0%" stop-color="#e3c67e"/>
       <stop offset="50%" stop-color="#cda856"/>
       <stop offset="100%" stop-color="#ab8639"/>
     </linearGradient>
@@ -18,8 +18,9 @@
 
   <!-- emblem -->
   <circle cx="80" cy="80" r="78" fill="url(#bg)"/>
+  <circle cx="80" cy="80" r="77" fill="none" stroke="#e6d9c0" stroke-width="1"/>
   <circle cx="80" cy="80" r="76" fill="none" stroke="url(#gold)" stroke-width="1.6"/>
-  <circle cx="80" cy="80" r="67" fill="none" stroke="url(#gold)" stroke-width="0.8" opacity="0.55"/>
+  <circle cx="80" cy="80" r="67" fill="none" stroke="url(#gold)" stroke-width="0.8" opacity="0.6"/>
   <g fill="none" stroke="url(#gold)" stroke-width="1.6" stroke-linecap="round">
     <path d="M30 100 C25 108 23 118 28 126"/>
     <path d="M28 103 C22 102 17 105 14 110"/>
