@@ -31,7 +31,11 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#top" className="flex items-center gap-2.5 text-forest-950">
-          <img src={logo} alt="MJT Immobilier" className="h-10 w-10" />
+          <img
+            src={logo}
+            alt="MJT Immobilier"
+            className="h-12 w-12 rounded-full [clip-path:circle(47%)]"
+          />
           <span className="font-display text-lg font-semibold tracking-tight">MJT Immobilier</span>
         </a>
 

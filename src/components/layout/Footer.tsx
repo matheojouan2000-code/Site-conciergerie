@@ -10,7 +10,11 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2.5 text-white">
-              <img src={logo} alt="MJT Immobilier" className="h-9 w-9" />
+              <img
+                src={logo}
+                alt="MJT Immobilier"
+                className="h-11 w-11 rounded-full [clip-path:circle(47%)]"
+              />
               <span className="font-display text-base font-semibold">MJT Immobilier</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed">
