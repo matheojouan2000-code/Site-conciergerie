@@ -1,38 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+    <radialGradient id="bg" cx="50%" cy="35%" r="80%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f2ebdd"/>
+      <stop offset="100%" stop-color="#f5efe3"/>
     </radialGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#e3c67e"/>
-      <stop offset="50%" stop-color="#cda856"/>
-      <stop offset="100%" stop-color="#ab8639"/>
+    <linearGradient id="gold" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e9cf8f"/>
+      <stop offset="50%" stop-color="#c69a4c"/>
+      <stop offset="100%" stop-color="#9c7530"/>
     </linearGradient>
   </defs>
 
   <circle cx="100" cy="100" r="98" fill="url(#bg)"/>
-  <circle cx="100" cy="100" r="97" fill="none" stroke="#e6d9c0" stroke-width="1"/>
-  <circle cx="100" cy="100" r="95.5" fill="none" stroke="url(#gold)" stroke-width="2"/>
-  <circle cx="100" cy="100" r="84" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.6"/>
+  <circle cx="100" cy="100" r="93" fill="none" stroke="url(#gold)" stroke-width="1.1"/>
+  <circle cx="100" cy="100" r="87.5" fill="none" stroke="url(#gold)" stroke-width="0.5" opacity="0.5"/>
 
-  <g fill="url(#gold)">
-    <path d="M100 10 L104 18 L100 26 L96 18 Z"/>
-    <path d="M100 174 L104 182 L100 190 L96 182 Z"/>
-  </g>
+  <path d="M100 46 L102.6 51.5 L108 54 L102.6 56.5 L100 62 L97.4 56.5 L92 54 L97.4 51.5 Z" fill="url(#gold)"/>
 
-  <g fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round">
-    <path d="M42 128 C36 138 34 150 40 160"/>
-    <path d="M40 132 C33 131 27 134 23 140"/>
-    <path d="M42 140 C35 141 29 146 26 153"/>
-    <path d="M45 148 C38 151 33 157 31 164"/>
-  </g>
-  <g fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round">
-    <path d="M158 128 C164 138 166 150 160 160"/>
-    <path d="M160 132 C167 131 173 134 177 140"/>
-    <path d="M158 140 C165 141 171 146 174 153"/>
-    <path d="M155 148 C162 151 167 157 169 164"/>
-  </g>
+  <text x="100" y="116" text-anchor="middle" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="58" font-weight="500" fill="url(#gold)" letter-spacing="3">MJT</text>
 
-  <text x="100" y="122" text-anchor="middle" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="88" font-weight="600" fill="url(#gold)" letter-spacing="-2">MJT</text>
+  <line x1="70" y1="136" x2="130" y2="136" stroke="url(#gold)" stroke-width="0.9"/>
 </svg>

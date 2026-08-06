@@ -1,44 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" fill="none">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+    <radialGradient id="bg" cx="50%" cy="35%" r="80%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f2ebdd"/>
+      <stop offset="100%" stop-color="#f5efe3"/>
     </radialGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="160" y2="160" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#e3c67e"/>
-      <stop offset="50%" stop-color="#cda856"/>
-      <stop offset="100%" stop-color="#ab8639"/>
-    </linearGradient>
-    <linearGradient id="goldSoft" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#cda856" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ab8639"/>
-      <stop offset="100%" stop-color="#cda856" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#e9cf8f"/>
+      <stop offset="50%" stop-color="#c69a4c"/>
+      <stop offset="100%" stop-color="#9c7530"/>
     </linearGradient>
   </defs>
 
-  <!-- emblem -->
-  <circle cx="80" cy="80" r="78" fill="url(#bg)"/>
-  <circle cx="80" cy="80" r="77" fill="none" stroke="#e6d9c0" stroke-width="1"/>
-  <circle cx="80" cy="80" r="76" fill="none" stroke="url(#gold)" stroke-width="1.6"/>
-  <circle cx="80" cy="80" r="67" fill="none" stroke="url(#gold)" stroke-width="0.8" opacity="0.6"/>
-  <g fill="none" stroke="url(#gold)" stroke-width="1.6" stroke-linecap="round">
-    <path d="M30 100 C25 108 23 118 28 126"/>
-    <path d="M28 103 C22 102 17 105 14 110"/>
-    <path d="M30 110 C24 111 19 115 16 121"/>
-    <path d="M33 117 C27 119 23 124 21 130"/>
-  </g>
-  <g fill="none" stroke="url(#gold)" stroke-width="1.6" stroke-linecap="round">
-    <path d="M130 100 C135 108 137 118 132 126"/>
-    <path d="M132 103 C138 102 143 105 146 110"/>
-    <path d="M130 110 C136 111 141 115 144 121"/>
-    <path d="M127 117 C133 119 137 124 139 130"/>
-  </g>
-  <text x="80" y="98" text-anchor="middle" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="68" font-weight="600" fill="url(#gold)" letter-spacing="-1.5">MJT</text>
+  <!-- seal -->
+  <circle cx="80" cy="80" r="72" fill="url(#bg)"/>
+  <circle cx="80" cy="80" r="68" fill="none" stroke="url(#gold)" stroke-width="1.1"/>
+  <circle cx="80" cy="80" r="63.5" fill="none" stroke="url(#gold)" stroke-width="0.5" opacity="0.5"/>
+  <path d="M80 34 L82.2 38.8 L87 41 L82.2 43.2 L80 48 L77.8 43.2 L73 41 L77.8 38.8 Z" fill="url(#gold)"/>
+  <text x="80" y="93" text-anchor="middle" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="41" font-weight="500" fill="url(#gold)" letter-spacing="2">MJT</text>
+  <line x1="59" y1="108" x2="101" y2="108" stroke="url(#gold)" stroke-width="0.8"/>
 
-  <!-- divider -->
-  <rect x="178" y="34" width="1.5" height="92" fill="url(#goldSoft)"/>
+  <!-- vertical rule -->
+  <line x1="172" y1="42" x2="172" y2="118" stroke="#e6d9c0" stroke-width="1"/>
 
   <!-- wordmark (for light backgrounds) -->
-  <text x="204" y="78" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="50" font-weight="600" fill="#211c16" letter-spacing="0.5">MJT</text>
-  <text x="204" y="112" font-family="'Inter','Plus Jakarta Sans',sans-serif" font-size="18" font-weight="600" letter-spacing="7" fill="#ab8639">PRESTIGE</text>
+  <text x="196" y="82" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="42" font-weight="500" fill="#211c16" letter-spacing="3">MJT</text>
+  <text x="196" y="112" font-family="'Inter','Plus Jakarta Sans',sans-serif" font-size="15" font-weight="500" letter-spacing="8" fill="#9c7530">PRESTIGE</text>
 </svg>

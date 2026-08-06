@@ -1,59 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+    <radialGradient id="bg" cx="50%" cy="35%" r="80%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f2ebdd"/>
+      <stop offset="100%" stop-color="#f5efe3"/>
     </radialGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#e3c67e"/>
-      <stop offset="50%" stop-color="#cda856"/>
-      <stop offset="100%" stop-color="#ab8639"/>
-    </linearGradient>
-    <linearGradient id="goldSoft" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#cda856" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ab8639"/>
-      <stop offset="100%" stop-color="#cda856" stop-opacity="0"/>
+    <linearGradient id="gold" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e9cf8f"/>
+      <stop offset="50%" stop-color="#c69a4c"/>
+      <stop offset="100%" stop-color="#9c7530"/>
     </linearGradient>
   </defs>
 
-  <!-- outer disc -->
+  <!-- disc -->
   <circle cx="100" cy="100" r="98" fill="url(#bg)"/>
-  <circle cx="100" cy="100" r="97" fill="none" stroke="#e6d9c0" stroke-width="1"/>
-  <circle cx="100" cy="100" r="95.5" fill="none" stroke="url(#gold)" stroke-width="2"/>
-  <circle cx="100" cy="100" r="84" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.6"/>
 
-  <!-- four cardinal diamonds -->
-  <g fill="url(#gold)">
-    <path d="M100 10 L104 18 L100 26 L96 18 Z"/>
-    <path d="M100 174 L104 182 L100 190 L96 182 Z"/>
-  </g>
+  <!-- hairline rings -->
+  <circle cx="100" cy="100" r="93" fill="none" stroke="url(#gold)" stroke-width="1.1"/>
+  <circle cx="100" cy="100" r="87.5" fill="none" stroke="url(#gold)" stroke-width="0.5" opacity="0.5"/>
 
-  <!-- laurel sprigs, left -->
-  <g fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round">
-    <path d="M46 118 C40 128 38 140 44 150"/>
-    <path d="M44 122 C37 121 31 124 27 130"/>
-    <path d="M46 130 C39 131 33 136 30 143"/>
-    <path d="M49 138 C42 141 37 147 35 154"/>
-    <path d="M53 146 C47 150 43 157 42 164"/>
-  </g>
-  <!-- laurel sprigs, right (mirrored) -->
-  <g fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round">
-    <path d="M154 118 C160 128 162 140 156 150"/>
-    <path d="M156 122 C163 121 169 124 173 130"/>
-    <path d="M154 130 C161 131 167 136 170 143"/>
-    <path d="M151 138 C158 141 163 147 165 154"/>
-    <path d="M147 146 C153 150 157 157 158 164"/>
-  </g>
+  <!-- single mark, top -->
+  <path d="M100 34 L102.6 39.5 L108 42 L102.6 44.5 L100 50 L97.4 44.5 L92 42 L97.4 39.5 Z" fill="url(#gold)"/>
 
   <!-- monogram -->
-  <text x="100" y="112" text-anchor="middle" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="72" font-weight="600" fill="url(#gold)" letter-spacing="-1">MJT</text>
+  <text x="100" y="103" text-anchor="middle" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="46" font-weight="500" fill="url(#gold)" letter-spacing="3">MJT</text>
 
-  <!-- divider -->
-  <rect x="60" y="126" width="80" height="1.5" fill="url(#goldSoft)"/>
+  <!-- thin rule -->
+  <line x1="76" y1="122" x2="124" y2="122" stroke="url(#gold)" stroke-width="0.9"/>
 
-  <!-- PRESTIGE arc -->
-  <path id="arc" d="M 44.8 146.3 A 72 72 0 0 0 155.2 146.3" fill="none"/>
-  <text font-family="'Inter','Plus Jakarta Sans',sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#5c4a35">
-    <textPath href="#arc" startOffset="50%" text-anchor="middle">PRESTIGE</textPath>
-  </text>
+  <!-- caption -->
+  <text x="100" y="144" text-anchor="middle" font-family="'Inter','Plus Jakarta Sans',sans-serif" font-size="11" font-weight="500" letter-spacing="5" fill="#8a7550">PRESTIGE</text>
+
+  <!-- bottom mark -->
+  <path d="M100 158 L102.6 163.5 L108 166 L102.6 168.5 L100 174 L97.4 168.5 L92 166 L97.4 163.5 Z" fill="url(#gold)" opacity="0.85"/>
 </svg>

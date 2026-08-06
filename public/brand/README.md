@@ -1,29 +1,30 @@
 # MJT Prestige — Logo
 
-Identité visuelle pour la conciergerie de luxe **MJT Prestige**, déclinée dans la
-palette or / forêt déjà utilisée sur le site (`src/index.css`).
+Identité visuelle pour la conciergerie de luxe **MJT Prestige** : ligne
+minimaliste, traits fins, dorure sobre — pas de fioritures, l'espace fait le
+travail.
 
 ## Fichiers
 
 | Fichier | Usage |
 | --- | --- |
-| `mjt-prestige-monogram.svg` / `.png` | Version complète du badge (monogramme **MJT** + mention **PRESTIGE**). Idéale en favicon, avatar réseaux sociaux, tampon/sceau, app icon. Fonctionne sur fond clair ou sombre (fond du badge déjà foncé). |
-| `mjt-prestige-emblem.svg` / `.png` | Badge simplifié (monogramme seul, sans texte arqué), destiné à être associé à un texte à côté (header, signature email). |
-| `mjt-prestige-logo.svg` | Logo horizontal complet (badge + « MJT PRESTIGE ») pour les fonds **clairs** (header, documents). |
-| `mjt-prestige-logo-dark.svg` | Même logo horizontal, texte en clair, pour les fonds **sombres** (footer, présentations). |
+| `mjt-prestige-monogram.svg` / `.png` | Sceau complet (médaillon + monogramme **MJT** + « PRESTIGE »). Favicon, avatar réseaux sociaux, cachet sur documents. |
+| `mjt-prestige-emblem.svg` / `.png` | Sceau simplifié (monogramme seul, sans la mention), à associer à un texte à côté (header, signature email). |
+| `mjt-prestige-logo.svg` | Lockup horizontal (sceau + « MJT PRESTIGE ») pour fond **clair**. |
+| `mjt-prestige-logo-dark.svg` | Même lockup pour fond **sombre** (footer) — le médaillon reste clair et se détache comme un cachet. |
+| `mjt-prestige-wordmark.svg` | Typographie pure, sans médaillon — pour poser sur une photo ou un fond hero, fond **clair**. |
+| `mjt-prestige-wordmark-dark.svg` | Idem, texte clair pour fond **sombre**. |
 
 ## Palette
 
-- Or : `#e3c67e → #cda856 → #ab8639` (dégradé)
-- Fond du badge (médaillon) : `#ffffff → #f2ebdd` (blanc/crème)
+- Or (trait fin, dégradé) : `#e9cf8f → #c69a4c → #9c7530`
+- Médaillon : `#ffffff → #f5efe3` (blanc/crème)
 - Texte clair (fond sombre) : `#faf8f3`
 - Texte foncé (fond clair) : `#211c16`
 
 ## Typographies
 
-- Monogramme / « MJT » : `Fraunces` (serif display du site), repli `Playfair Display, Georgia, serif`
-- « PRESTIGE » : `Inter`, majuscules, letter-spacing large
+- Monogramme / « MJT » : `Fraunces`, repli `Playfair Display, Georgia, serif`, graisse 500 (pas de gras)
+- « PRESTIGE » : `Inter`, petites majuscules très espacées (letter-spacing large)
 
-Tous les fichiers sont des SVG vectoriels éditables (pas de police embarquée :
-si `Fraunces` n'est pas chargée par le navigateur/logiciel, le repli serif
-s'applique automatiquement).
+Tous les fichiers sont des SVG vectoriels éditables, sans police embarquée.
