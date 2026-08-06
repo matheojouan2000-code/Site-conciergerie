@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail, MessageCircle } from "lucide-react";
 import { Logo } from "../ui/Logo";
 
 const ZONES = ["Nantes", "Paris", "Bordeaux"];
@@ -45,8 +45,15 @@ export function Footer() {
             <h3 className="font-display text-sm font-semibold text-white">Contact direct</h3>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li className="flex items-center gap-2">
-                <Phone size={14} className="text-gold-500" />
-                <a href="tel:+33672417304" className="hover:text-gold-400">06 72 41 73 04</a>
+                <MessageCircle size={14} className="text-gold-500" />
+                <a
+                  href="https://wa.me/33672417304"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold-400"
+                >
+                  WhatsApp
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} className="text-gold-500" />

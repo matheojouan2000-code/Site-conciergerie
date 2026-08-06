@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import { Phone, CalendarCheck } from "lucide-react";
+import { MessageCircle, CalendarCheck } from "lucide-react";
 import { scrollToId } from "../../lib/scroll";
 
-const PHONE_NUMBER = "+33672417304";
-const PHONE_DISPLAY = "06 72 41 73 04";
+const WHATSAPP_NUMBER = "33672417304";
 
 export function FloatingCTA() {
   const [visible, setVisible] = useState(false);
@@ -20,11 +19,13 @@ export function FloatingCTA() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 flex gap-2 border-t border-forest-950/10 bg-white/95 p-3 shadow-[0_-10px_30px_-15px_rgba(28,23,18,0.25)] backdrop-blur-md lg:hidden">
       <a
-        href={`tel:${PHONE_NUMBER}`}
+        href={`https://wa.me/${WHATSAPP_NUMBER}`}
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex flex-1 items-center justify-center gap-2 rounded-md border border-forest-950/15 py-3 text-sm font-semibold text-forest-950"
       >
-        <Phone size={16} />
-        {PHONE_DISPLAY}
+        <MessageCircle size={16} />
+        WhatsApp
       </a>
       <button
         onClick={() => scrollToId("rdv")}

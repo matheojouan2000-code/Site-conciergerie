@@ -2,8 +2,8 @@ import { CalendarCheck, Mail } from "lucide-react";
 import { Button } from "../ui/Button";
 import { openCalendly } from "../../lib/calendly";
 
-const PHONE_DISPLAY = "06 72 41 73 04";
 const EMAIL = "mjtimmobilier94@gmail.com";
+const WHATSAPP_NUMBER = "33672417304";
 
 export function Booking() {
   return (
@@ -39,7 +39,15 @@ export function Booking() {
         </div>
 
         <p className="mt-5 text-xs text-white/40">
-          Vous préférez qu'on vous rappelle directement&nbsp;? {PHONE_DISPLAY}
+          Vous préférez échanger par message&nbsp;?{" "}
+          <a
+            href={`https://wa.me/${WHATSAPP_NUMBER}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-white/70"
+          >
+            Écrivez-nous sur WhatsApp
+          </a>
         </p>
       </div>
     </section>
