@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#423628"/>
+      <stop offset="100%" stop-color="#211c16"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f3d68a"/>
+      <stop offset="50%" stop-color="#cda856"/>
+      <stop offset="100%" stop-color="#ab8639"/>
+    </linearGradient>
+    <linearGradient id="goldSoft" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#cda856" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#e3c67e"/>
+      <stop offset="100%" stop-color="#cda856" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- outer disc -->
+  <circle cx="100" cy="100" r="98" fill="url(#bg)"/>
+  <circle cx="100" cy="100" r="95.5" fill="none" stroke="url(#gold)" stroke-width="2"/>
+  <circle cx="100" cy="100" r="84" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.55"/>
+
+  <!-- four cardinal diamonds -->
+  <g fill="url(#gold)">
+    <path d="M100 10 L104 18 L100 26 L96 18 Z"/>
+    <path d="M100 174 L104 182 L100 190 L96 182 Z"/>
+  </g>
+
+  <!-- laurel sprigs, left -->
+  <g fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round">
+    <path d="M46 118 C40 128 38 140 44 150"/>
+    <path d="M44 122 C37 121 31 124 27 130"/>
+    <path d="M46 130 C39 131 33 136 30 143"/>
+    <path d="M49 138 C42 141 37 147 35 154"/>
+    <path d="M53 146 C47 150 43 157 42 164"/>
+  </g>
+  <!-- laurel sprigs, right (mirrored) -->
+  <g fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round">
+    <path d="M154 118 C160 128 162 140 156 150"/>
+    <path d="M156 122 C163 121 169 124 173 130"/>
+    <path d="M154 130 C161 131 167 136 170 143"/>
+    <path d="M151 138 C158 141 163 147 165 154"/>
+    <path d="M147 146 C153 150 157 157 158 164"/>
+  </g>
+
+  <!-- monogram -->
+  <text x="100" y="112" text-anchor="middle" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="72" font-weight="600" fill="url(#gold)" letter-spacing="-1">MJT</text>
+
+  <!-- divider -->
+  <rect x="60" y="126" width="80" height="1.5" fill="url(#goldSoft)"/>
+
+  <!-- PRESTIGE arc -->
+  <path id="arc" d="M 44.8 146.3 A 72 72 0 0 0 155.2 146.3" fill="none"/>
+  <text font-family="'Inter','Plus Jakarta Sans',sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#e6d9c0">
+    <textPath href="#arc" startOffset="50%" text-anchor="middle">PRESTIGE</textPath>
+  </text>
+</svg>
