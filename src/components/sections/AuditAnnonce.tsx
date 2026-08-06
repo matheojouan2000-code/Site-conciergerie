@@ -1,6 +1,9 @@
 import { CheckCircle2, Search } from "lucide-react";
 import { Button } from "../ui/Button";
-import { scrollToId } from "../../lib/scroll";
+
+// Lien de paiement Stripe pour l'audit d'annonce (350€) — à remplacer par le
+// vrai lien une fois créé sur https://dashboard.stripe.com/payment-links
+const STRIPE_AUDIT_LINK = "https://buy.stripe.com/xxxxxxxxxxxx";
 
 const INCLUDED = [
   "Analyse complète de votre annonce (photos, titre, description)",
@@ -48,7 +51,11 @@ export function AuditAnnonce() {
             </p>
             <p className="mt-1 text-xs text-forest-900/50">TTC</p>
 
-            <Button size="lg" className="mt-6 w-full" onClick={() => scrollToId("rdv")}>
+            <Button
+              size="lg"
+              className="mt-6 w-full"
+              onClick={() => window.open(STRIPE_AUDIT_LINK, "_blank", "noopener,noreferrer")}
+            >
               Commander mon audit
             </Button>
           </div>
