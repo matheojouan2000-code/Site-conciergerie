@@ -1,6 +1,4 @@
-// URL Calendly à remplacer par le lien réel une fois le compte créé
-// (Calendly > Type d'évènement > "Copier le lien").
-export const CALENDLY_URL = "https://calendly.com/mjtimmobilier94/appel-decouverte";
+export const CALENDLY_URL = "https://calendly.com/mjtimmobilier94/30min";
 
 declare global {
   interface Window {
