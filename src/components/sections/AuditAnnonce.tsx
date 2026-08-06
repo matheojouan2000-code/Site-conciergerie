@@ -53,7 +53,9 @@ export function AuditAnnonce() {
             <Button
               size="lg"
               className="mt-6 w-full"
-              onClick={() => window.open(STRIPE_AUDIT_LINK, "_blank", "noopener,noreferrer")}
+              href={STRIPE_AUDIT_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Commander mon audit
             </Button>
