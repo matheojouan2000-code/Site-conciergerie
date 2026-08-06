@@ -49,7 +49,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <Button variant="primary" size="md" onClick={() => scrollToId("rdv")}>
-            Réserver un appel
+            Prendre rendez-vous
           </Button>
         </div>
 
@@ -83,7 +83,7 @@ export function Header() {
                 scrollToId("rdv");
               }}
             >
-              Réserver un appel
+              Prendre rendez-vous
             </Button>
           </nav>
         </div>

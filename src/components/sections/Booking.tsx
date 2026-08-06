@@ -1,7 +1,7 @@
-import { CalendarCheck, PhoneCall, Mail } from "lucide-react";
+import { CalendarCheck, Mail } from "lucide-react";
 import { Button } from "../ui/Button";
+import { openCalendly } from "../../lib/calendly";
 
-const PHONE_NUMBER = "+33672417304";
 const PHONE_DISPLAY = "06 72 41 73 04";
 const EMAIL = "mjtimmobilier94@gmail.com";
 
@@ -18,13 +18,14 @@ export function Booking() {
         </h2>
         <p className="mt-4 text-white/60">
           Un appel découverte gratuit pour faire connaissance&nbsp;: nous échangeons sur votre bien
-          et évaluons ensemble son potentiel de revenus.
+          et évaluons ensemble son potentiel de revenus. Choisissez le créneau qui vous arrange,
+          nous vous appelons à l'heure prévue.
         </p>
 
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-          <Button size="lg" onClick={() => window.open(`tel:${PHONE_NUMBER}`, "_self")}>
-            <PhoneCall size={18} />
-            Appeler {PHONE_DISPLAY}
+          <Button size="lg" onClick={() => openCalendly()}>
+            <CalendarCheck size={18} />
+            Choisir un créneau
           </Button>
           <Button
             variant="ghost"
@@ -36,6 +37,10 @@ export function Booking() {
             Écrire à notre équipe
           </Button>
         </div>
+
+        <p className="mt-5 text-xs text-white/40">
+          Vous préférez qu'on vous rappelle directement&nbsp;? {PHONE_DISPLAY}
+        </p>
       </div>
     </section>
   );

@@ -31,7 +31,7 @@ export function FloatingCTA() {
         className="flex flex-1 items-center justify-center gap-2 rounded-md bg-gold-gradient py-3 text-sm font-semibold text-white shadow-gold"
       >
         <CalendarCheck size={16} />
-        Réserver un appel
+        Prendre rendez-vous
       </button>
     </div>
   );

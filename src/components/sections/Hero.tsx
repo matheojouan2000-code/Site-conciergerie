@@ -32,7 +32,7 @@ export function Hero() {
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button size="lg" onClick={() => scrollToId("rdv")}>
-              Réserver un appel découverte
+              Prendre rendez-vous
               <ArrowRight size={16} />
             </Button>
             <Button
