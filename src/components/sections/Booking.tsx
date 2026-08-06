@@ -14,7 +14,7 @@ export function Booking() {
           Appel découverte gratuit
         </span>
         <h2 className="mt-5 text-balance font-display text-3xl font-semibold text-white sm:text-4xl">
-          Parlons de votre bien en 15 minutes
+          Parlons de votre bien en 30 minutes
         </h2>
         <p className="mt-4 text-white/60">
           Un appel découverte gratuit pour faire connaissance&nbsp;: nous échangeons sur votre bien
