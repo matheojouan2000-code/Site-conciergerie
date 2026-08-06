@@ -1,9 +1,8 @@
 import { CheckCircle2, Search } from "lucide-react";
 import { Button } from "../ui/Button";
 
-// Lien de paiement Stripe pour l'audit d'annonce (350€) — à remplacer par le
-// vrai lien une fois créé sur https://dashboard.stripe.com/payment-links
-const STRIPE_AUDIT_LINK = "https://buy.stripe.com/xxxxxxxxxxxx";
+// Lien de paiement Stripe pour l'audit d'annonce (350€)
+const STRIPE_AUDIT_LINK = "https://buy.stripe.com/9B63cv3960Lu5BjfZrbjW01";
 
 const INCLUDED = [
   "Analyse complète de votre annonce (photos, titre, description)",
