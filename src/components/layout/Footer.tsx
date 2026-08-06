@@ -1,4 +1,5 @@
-import { KeyRound, MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
+import logo from "../../assets/mjt-logo.svg";
 
 const ZONES = ["Nantes", "Paris", "Bordeaux"];
 
@@ -8,10 +9,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2 text-white">
-              <span className="flex h-8 w-8 items-center justify-center rounded-md bg-gold-gradient text-white">
-                <KeyRound size={16} strokeWidth={2.25} />
-              </span>
+            <div className="flex items-center gap-2.5 text-white">
+              <img src={logo} alt="MJT Immobilier" className="h-9 w-9" />
               <span className="font-display text-base font-semibold">MJT Immobilier</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed">

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Menu, X, KeyRound } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "../ui/Button";
 import { scrollToId } from "../../lib/scroll";
+import logo from "../../assets/mjt-logo.svg";
 
 const NAV_LINKS = [
   { href: "#top", label: "Accueil" },
@@ -29,10 +30,8 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <a href="#top" className="flex items-center gap-2 text-forest-950">
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-gold-gradient text-white">
-            <KeyRound size={18} strokeWidth={2.25} />
-          </span>
+        <a href="#top" className="flex items-center gap-2.5 text-forest-950">
+          <img src={logo} alt="MJT Immobilier" className="h-10 w-10" />
           <span className="font-display text-lg font-semibold tracking-tight">MJT Immobilier</span>
         </a>
 
