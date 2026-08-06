@@ -33,10 +33,10 @@ export function Header() {
         <a href="#top" className="flex items-center gap-2.5 text-forest-950">
           <img
             src={logo}
-            alt="MJT Immobilier"
-            className="h-12 w-12 rounded-full [clip-path:circle(47%)]"
+            alt="MJT Prestige"
+            className="h-16 w-16 rounded-full [clip-path:circle(47%)]"
           />
-          <span className="font-display text-lg font-semibold tracking-tight">MJT Immobilier</span>
+          <span className="font-display text-lg font-semibold tracking-tight">MJT Prestige</span>
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">

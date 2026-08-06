@@ -24,7 +24,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-lg text-balance text-lg text-forest-900/65">
-            Vous possédez un logement destiné à la location courte durée&nbsp;? MJT Immobilier
+            Vous possédez un logement destiné à la location courte durée&nbsp;? MJT Prestige
             prend en charge l'intégralité de sa gestion : création des annonces, accueil de vos
             voyageurs, entretien du logement et ajustement des prix en temps réel, pour que vos
             revenus locatifs atteignent leur plein potentiel.
@@ -57,7 +57,7 @@ export function Hero() {
           <div className="clip-blob relative aspect-[4/3.4] overflow-hidden shadow-forest">
             <img
               src={livingRoom}
-              alt="Salon rénové et décoré d'un bien géré par MJT Immobilier"
+              alt="Salon rénové et décoré d'un bien géré par MJT Prestige"
               className="h-full w-full object-cover"
             />
           </div>

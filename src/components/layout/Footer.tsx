@@ -12,10 +12,10 @@ export function Footer() {
             <div className="flex items-center gap-2.5 text-white">
               <img
                 src={logo}
-                alt="MJT Immobilier"
+                alt="MJT Prestige"
                 className="h-11 w-11 rounded-full [clip-path:circle(47%)]"
               />
-              <span className="font-display text-base font-semibold">MJT Immobilier</span>
+              <span className="font-display text-base font-semibold">MJT Prestige</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed">
               Gestion locative premium pour propriétaires exigeants. Vos revenus, notre priorité.
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs sm:flex-row">
-          <p>© {new Date().getFullYear()} MJT Immobilier. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} MJT Prestige. Tous droits réservés.</p>
           <div className="flex gap-5">
             <a href="#" className="hover:text-gold-400">Mentions légales</a>
             <a href="#" className="hover:text-gold-400">CGV</a>
