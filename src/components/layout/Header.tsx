@@ -29,12 +29,12 @@ export function Header() {
         scrolled ? "border-forest-950/10 bg-cream-50/90 backdrop-blur-md" : "border-transparent bg-cream-50/60"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <a href="#top" className="flex items-center gap-2.5 text-forest-950">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-2.5 lg:px-8">
+        <a href="#top" className="flex items-center gap-3 text-forest-950">
           <img
             src={logo}
             alt="MJT Prestige"
-            className="h-16 w-16 rounded-full [clip-path:circle(47%)]"
+            className="h-24 w-24 rounded-full [clip-path:circle(47%)]"
           />
           <span className="font-display text-lg font-semibold tracking-tight">MJT Prestige</span>
         </a>
