@@ -5,10 +5,9 @@ interface LogoProps {
 }
 
 /**
- * Monogramme MJT Prestige, inline (pas une <img>) pour que le texte du
- * médaillon utilise la police Fraunces déjà chargée par la page plutôt
- * que de retomber sur une police système dans le contexte isolé d'un
- * fichier .svg externe.
+ * Monogramme MJT Prestige, inline (pas une <img>) pour éviter le contexte
+ * isolé d'un fichier .svg externe. Le "MJT" utilise Georgia plutôt que
+ * Fraunces : le J de Fraunces a un jambage recourbé qui rendait mal ici.
  */
 export function Logo({ className }: LogoProps) {
   const bgId = useId();
@@ -43,7 +42,7 @@ export function Logo({ className }: LogoProps) {
         x="100"
         y="103"
         textAnchor="middle"
-        fontFamily="Fraunces, 'Playfair Display', Georgia, serif"
+        fontFamily="Georgia, 'Times New Roman', serif"
         fontSize="46"
         fontWeight="500"
         fill={`url(#${goldId})`}
