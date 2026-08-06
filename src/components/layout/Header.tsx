@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/Button";
+import { Logo } from "../ui/Logo";
 import { scrollToId } from "../../lib/scroll";
-import logo from "../../assets/mjt-logo.svg";
 
 const NAV_LINKS = [
   { href: "#top", label: "Accueil" },
@@ -31,11 +31,7 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-2.5 lg:px-8">
         <a href="#top" className="flex items-center gap-3 text-forest-950">
-          <img
-            src={logo}
-            alt="MJT Prestige"
-            className="h-24 w-24 rounded-full [clip-path:circle(47%)]"
-          />
+          <Logo className="h-24 w-24 rounded-full [clip-path:circle(47%)]" />
           <span className="font-display text-lg font-semibold tracking-tight">MJT Prestige</span>
         </a>
 

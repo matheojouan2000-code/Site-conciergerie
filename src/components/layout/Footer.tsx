@@ -1,5 +1,5 @@
 import { MapPin, Mail, Phone } from "lucide-react";
-import logo from "../../assets/mjt-logo.svg";
+import { Logo } from "../ui/Logo";
 
 const ZONES = ["Nantes", "Paris", "Bordeaux"];
 
@@ -10,11 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2.5 text-white">
-              <img
-                src={logo}
-                alt="MJT Prestige"
-                className="h-11 w-11 rounded-full [clip-path:circle(47%)]"
-              />
+              <Logo className="h-11 w-11 rounded-full [clip-path:circle(47%)]" />
               <span className="font-display text-base font-semibold">MJT Prestige</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed">
