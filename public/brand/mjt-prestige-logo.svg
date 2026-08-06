@@ -24,5 +24,5 @@
 
   <!-- wordmark (for light backgrounds) -->
   <text x="196" y="82" font-family="'Fraunces','Playfair Display',Georgia,serif" font-size="42" font-weight="500" fill="#211c16" letter-spacing="3">MJT</text>
-  <text x="196" y="112" font-family="'Inter','Plus Jakarta Sans',sans-serif" font-size="15" font-weight="500" letter-spacing="8" fill="#9c7530">PRESTIGE</text>
+  <text x="196" y="112" font-family="'Inter','Plus Jakarta Sans',sans-serif" font-size="16" font-weight="600" letter-spacing="7" fill="#7a5b28">PRESTIGE</text>
 </svg>
