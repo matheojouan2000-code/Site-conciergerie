@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2.5 text-white">
               <Logo className="h-11 w-11 rounded-full [clip-path:circle(47%)]" />
-              <span className="font-display text-base font-semibold">MJT Prestige</span>
+              <span className="font-sans text-base font-semibold">MJT Prestige</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed">
               Gestion locative premium pour propriétaires exigeants. Vos revenus, notre priorité.

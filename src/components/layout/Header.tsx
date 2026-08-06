@@ -32,7 +32,7 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-2.5 lg:px-8">
         <a href="#top" className="flex items-center gap-3 text-forest-950">
           <Logo className="h-24 w-24 rounded-full [clip-path:circle(47%)]" />
-          <span className="font-display text-lg font-semibold tracking-tight">MJT Prestige</span>
+          <span className="font-sans text-lg font-semibold tracking-tight">MJT Prestige</span>
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
