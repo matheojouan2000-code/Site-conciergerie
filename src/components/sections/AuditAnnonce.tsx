@@ -1,4 +1,4 @@
-import { CheckCircle2, Search } from "lucide-react";
+import { CheckCircle2, Search, ShieldCheck } from "lucide-react";
 import { Button } from "../ui/Button";
 
 // Lien de paiement Stripe pour l'audit d'annonce (250€)
@@ -50,6 +50,10 @@ export function AuditAnnonce() {
               250<span className="text-xl">€</span>
             </p>
             <p className="mt-1 text-xs text-forest-900/50">TTC</p>
+            <p className="mt-3 inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-gold-600">
+              <ShieldCheck size={14} />
+              Satisfait ou remboursé
+            </p>
 
             <Button
               size="lg"
