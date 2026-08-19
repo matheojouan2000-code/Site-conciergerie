@@ -1,7 +1,7 @@
 import { CheckCircle2, Search } from "lucide-react";
 import { Button } from "../ui/Button";
 
-// Lien de paiement Stripe pour l'audit d'annonce (350€)
+// Lien de paiement Stripe pour l'audit d'annonce (250€)
 const STRIPE_AUDIT_LINK = "https://buy.stripe.com/9B63cv3960Lu5BjfZrbjW01";
 
 const INCLUDED = [
@@ -46,7 +46,7 @@ export function AuditAnnonce() {
           <div className="flex flex-col justify-center rounded-lg bg-cream-100 p-8 text-center lg:col-span-2">
             <p className="text-sm text-forest-900/60">Tarif unique</p>
             <p className="mt-1 font-display text-5xl font-semibold text-forest-950">
-              350<span className="text-xl">€</span>
+              250<span className="text-xl">€</span>
             </p>
             <p className="mt-1 text-xs text-forest-900/50">TTC</p>
 
