@@ -8,6 +8,7 @@ const INCLUDED = [
   "Analyse complète de votre annonce (photos, titre, description)",
   "Étude de votre tarification face à la concurrence locale",
   "Recommandations concrètes et priorisées",
+  "Guide complet pour aller chercher jusqu'à 20% de chiffre d'affaires supplémentaire",
   "Rapport détaillé livré par écrit sous 5 jours",
 ];
 
