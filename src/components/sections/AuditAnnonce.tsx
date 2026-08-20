@@ -30,9 +30,6 @@ export function AuditAnnonce() {
               vous livre un plan d'action concret pour augmenter votre visibilité, votre taux de
               réservation et vos revenus — sans passer par une gestion complète.
             </p>
-            <p className="mt-3 text-sm text-forest-900/50">
-              Idéal en complément de notre offre de gestion, ou en solo si vous êtes autonome.
-            </p>
 
             <ul className="mt-6 space-y-3">
               {INCLUDED.map((item) => (
