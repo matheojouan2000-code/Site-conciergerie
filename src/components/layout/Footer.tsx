@@ -66,7 +66,7 @@ export function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs sm:flex-row">
           <p>© {new Date().getFullYear()} MJT Prestige. Tous droits réservés.</p>
           <div className="flex gap-5">
-            <a href="#" className="hover:text-gold-400">Mentions légales</a>
+            <a href="./mentions-legales.html" className="hover:text-gold-400">Mentions légales</a>
             <a href="#" className="hover:text-gold-400">CGV</a>
             <a href="#" className="hover:text-gold-400">Confidentialité</a>
           </div>
