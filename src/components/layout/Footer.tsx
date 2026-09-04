@@ -68,7 +68,7 @@ export function Footer() {
           <div className="flex gap-5">
             <a href="./mentions-legales.html" className="hover:text-gold-400">Mentions légales</a>
             <a href="#" className="hover:text-gold-400">CGV</a>
-            <a href="#" className="hover:text-gold-400">Confidentialité</a>
+            <a href="./politique-de-confidentialite/" className="hover:text-gold-400">Confidentialité</a>
           </div>
         </div>
       </div>
